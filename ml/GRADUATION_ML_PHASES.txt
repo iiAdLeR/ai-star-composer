@@ -1,0 +1,76 @@
+AI Star Composer — مسار تخرّج موسّع (تعلم آلي)
+================================================
+
+المرحلة 0 — تثبيت الأساس
+  - تأكد أن /generate + MIDI + (اختياري) HQ يعملان.
+  - ثبّت حزمة ML:  pip install -r requirements-ml.txt
+
+نوتبوك مرتب للمذكرة
+  - افتح من جذر المشروع:  ml/graduation_ml_pipeline.ipynb
+  - يشغّل بالترتيب: جلب مارس (اختياري) → تصدير style_sequences → تدريب → توليد MIDI لكل ستايل.
+
+مسار الستايلات الأربعة + LSTM (ربط صريح)
+  ملاحظة: كل سطر تصدير يتضمّن الآن planet_idx (0..7) بجانب style_idx حتى يدرّب LSTM على اختلاف الكواكب.
+  1) صدّر تسلسلات موسومة من نفس منطق المشروع (NASA + generate_events لكل ستايل):
+       python -m ml.export_style_sequences --load-json data/mars_xxxxx.json --output data/ml/style_sequences.jsonl
+     أو من الشبكة — افتراضياً كل الكواكب الثمانية + 90 يوم + 32 بذرة → ملف JSONL واحد:
+       python -m ml.export_style_sequences --output data/ml/style_sequences.jsonl --sleep 2
+     لتضييق:  --planets Mars,Jupiter
+     دمج عدة JSON يدوياً: صدّر أول ملف ثم أعد التشغيل بـ --load-json b.json --append لنفس --output
+     تجميع سريع من data/nasa_planets/*.json (بدون شبكة) إلى ملف واحد:
+       python -m ml.bundle_local_planet_exports
+     (افتراضياً → data/ml/style_sequences_8planets.jsonl؛ بذور 0..31 مثل النوتبوك؛ --seeds و --modes قابلة للتعديل)
+  2) درّب (يكتشف style_idx و planet_idx تلقائياً من JSONL؛ عطّل الكوكب بـ --planet-conditioned off لملفات MIDI خارجية فقط):
+       python -m ml.train_sequence_lstm --data data/ml/style_sequences.jsonl --epochs 25 --out ml/checkpoints/note_lstm_style.pt
+  3) ولّد MIDI حسب الستايل:
+       python -m ml.generate_from_lstm --checkpoint ml/checkpoints/note_lstm_style.pt --style pop --out outputs/lstm_pop.mid
+     أو symphony كامل (باس + هارموني + طبول، مثل *_symphony.mid):
+       python -m ml.symphony_from_lstm --checkpoint ml/checkpoints/note_lstm_style.pt --load-json data/mars_ml_pipeline.json --style pop --out-dir outputs
+  ملاحظة: هذا يعلّم أنماط اللحن/المدة القادمة من المحرك الرمزي *لكل ستايل*.
+  لتكبير الداتا «حسب نوع» من MIDI خارجي: ضع ملفات في مجلد لكل نوع (مثلاً عيّنة بوب)، ثم:
+       python -m ml.ingest_external_midi --input-dir data/external_midi/pop_pick --style-idx 1 --output data/ml/ext_pop.jsonl
+     (0=calm  1=pop  2=study  3=cinematic)  ثم ادمج مع style_sequences:
+       python -m ml.merge_external_jsonl data/ml/style_sequences.jsonl data/ml/ext_pop.jsonl -o data/ml/train_styles_mixed.jsonl
+     التدريب المشروط بالستايل يتخطّى أي سطر JSONL بدون style_idx (لن يُعيَّن خطأً إلى calm).
+  MAESTRO/Lakh بدون style_idx: استخدمها مع --style-conditioned off أو أضف --style-idx عند الاستيراد (تسمية تقريبية من عندك).
+
+المرحلة 1 — بناء الداتا (Synthetic supervised)
+  - صدّر JSONL من الفيزياء + المحرك الرمزي الحالي:
+      python -m ml.dataset_export --output data/ml/train.jsonl --planets Mars,Jupiter,Venus --days 60 --sleep 2
+    أو بدون نت (من JSON محفوظ):
+      python -m ml.dataset_export --load-json data/mars_xxxxx.json --output data/ml/train.jsonl --planets Mars
+  - كبّر الحجم: كواكب أكثر، أيام أكثر، بذور أكثر (--seeds).
+
+المرحلة 2 — نموذج أولي (Baseline)
+  - python -m ml.train_baseline_sklearn --data data/ml/train.jsonl --out ml/checkpoints/pitch_rf.joblib
+  - هدف: التنبؤ بـ y_pitch من متجه x (ميزات + نوتة سابقة + ستايل + وضع).
+  - التقييم: classification_report في الطرفية؛ الملف الناتج joblib للمذكرة/تجارب لاحقة (دمج اختياري في المحرك).
+
+المرحلة 3 — دمج في المنتج (Composer head)
+  - استبدال أو مزج اختيار النوتة: النموذج يقترح → قيود المقياس/الهارموني تبقى كطبقة لاحقة.
+  - وثّق في المذكرة: بيانات synthetic، حدود الجودة، أخلاقيات/مصادر NASA.
+
+المرحلة 4 — توسيع (اختياري ضخم)
+  - LSTM/Transformer على تسلسل نوتات + شروط ميزات مدارية.
+  - أو pre-trained MIDI + fine-tune صغير (ترخيص + GPU).
+  - إنتاج احترافي: DAW / VST بعد MIDI.
+
+مسار «فخامة موسيقية» (MIDI خارجي مرخّص)
+  1) MAESTRO: بعد فك الضغط غالباً يظهر المجلد  data/external_midi/maestro-v3.0.0  (في ملفات .midi حسب السنة).
+  2) اقرأ  data/external_midi/maestro-v3.0.0/LICENSE  وملف  ml/SOURCES_AND_LICENSES.txt  (MAESTRO = CC BY-NC-SA 4.0).
+  3) استيراد MAESTRO فقط:
+       python -m ml.ingest_external_midi --input-dir data/external_midi/maestro-v3.0.0 --output data/ml/external_notes_maestro.jsonl
+     أو كل ما تحت external_midi:
+       python -m ml.ingest_external_midi --input-dir data/external_midi --output data/ml/external_notes.jsonl
+  4) Lakh / مجموعات أخرى: انسخ عيّنة مفكوكة تحت مجلد فرعي (مثلاً data/external_midi/lakh_sample/) ثم:
+       python -m ml.ingest_external_midi --input-dir data/external_midi/lakh_sample --output data/ml/external_notes_lakh.jsonl
+       python -m ml.merge_external_jsonl data/ml/external_notes_maestro.jsonl data/ml/external_notes_lakh.jsonl -o data/ml/external_notes_all.jsonl
+  5)  python -m ml.train_sequence_lstm --data data/ml/external_notes_maestro.jsonl --epochs 20
+     (أو external_notes_all.jsonl إذا دمجت مصادر).
+  6)  python -m ml.generate_from_lstm --checkpoint ml/checkpoints/note_lstm.pt --out outputs/lstm_sample.mid
+  7) FluidSynth / DAW للصوت النهائي.
+  ملاحظة: النموذج الحالي أحادي الصوت؛ عدد أسطر JSONL ≈ عدد ملفات MIDI التي تجاوزت min-notes (الباقي يُتخطّى).
+
+ملاحظات
+  - data/ml/*.jsonl كبيرة: لا ترفعها لـ git إن طلب القسم تجاهلها.
+  - NASA API: استخدم --sleep لتقليل الضغط؛ احتفظ بنسخ JSON.

@@ -1,0 +1,24 @@
+{
+  "name": "AI Star Composer",
+  "short_name": "AI Star",
+  "description": "NASA orbital data, transformed into music. Educational suite, AI vs baseline sonification.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#05030d",
+  "theme_color": "#05030d",
+  "categories": ["education", "music", "science"],
+  "icons": [
+    {
+      "src": "/logo-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ]
+}

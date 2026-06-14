@@ -1,0 +1,64 @@
+# --- Secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+~$*
+
+# --- Node / Web ---
+node_modules/
+web/dist/
+web/.vite/
+*.log
+
+# --- NASA / generated data (regenerated at runtime) ---
+data/cache/
+data/*.json
+data/gifts/
+data/missions/
+
+# --- ML datasets (large + license-restricted, NOT redistributable) ---
+data/external_midi/lmd_full/
+data/external_midi/maestro-v3.0.0/
+data/external_midi/**/*.mid
+data/external_midi/**/*.midi
+data/ml/external_notes*.jsonl
+data/ml/style_sequences*.jsonl
+data/ml/birthday_sequences.jsonl
+data/ml/*.jsonl
+
+# --- ML checkpoints (large binaries) ---
+ml/checkpoints/*.pt
+ml/checkpoints/*.joblib
+
+# --- Generated audio outputs ---
+outputs/
+!outputs/.gitkeep
+
+# --- Optional large assets ---
+assets/soundfonts/*.sf2
+assets/backgrounds/*.wav
+
+# --- Docs lock files ---
+docs/~$*

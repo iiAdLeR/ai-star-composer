@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ai-star-composer-api
+    runtime: docker
+    plan: free
+    region: frankfurt
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: NASA_API_KEY
+        sync: false
+      - key: DATA_DIR
+        value: data
+      - key: OUTPUTS_DIR
+        value: outputs
+      - key: ALLOWED_FRONTEND_ORIGIN
+        sync: false

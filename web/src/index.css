@@ -1,0 +1,583 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-void-950: #05030d;
+  --color-void-900: #0c0820;
+  --color-void-800: #14102a;
+  --color-nebula-400: #a78bfa;
+  --color-nebula-300: #c4b5fd;
+  --color-aurora-400: #22d3ee;
+  --color-aurora-500: #06b6d4;
+}
+
+html {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Tailwind v4 Preflight no longer sets `cursor: pointer` on <button> or
+   role="button" elements. Restore the old browser affordance so every
+   clickable surface (custom <button>, ARIA buttons, checkboxes, summary
+   disclosures) reads as interactive on hover. Disabled controls get
+   not-allowed so the user feels the block instead of guessing. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+summary,
+label[for],
+input[type="checkbox"]:not(:disabled),
+input[type="radio"]:not(:disabled),
+input[type="submit"]:not(:disabled),
+input[type="button"]:not(:disabled),
+input[type="reset"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-void-950);
+  color: #e8e6f2;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-4%, 3%);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.03);
+  }
+}
+
+.starfield-layer {
+  animation: drift 120s linear infinite alternate;
+}
+
+.star {
+  animation: twinkle var(--tw-duration, 4s) ease-in-out infinite;
+  animation-delay: var(--tw-delay, 0s);
+}
+
+.welcome-orb-glow {
+  animation: glow-pulse 6s ease-in-out infinite;
+}
+
+/* —— Welcome entrance: “warp” + hero —— */
+@keyframes starfield-warp-enter {
+  0% {
+    transform: scale(1.22);
+    opacity: 0;
+    filter: brightness(1.35) blur(3px);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: brightness(1) blur(0);
+  }
+}
+
+.starfield-welcome-root {
+  animation: starfield-warp-enter 1.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes warp-streaks-spin {
+  0% {
+    transform: rotate(0deg) scale(0.25);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: rotate(100deg) scale(1.05);
+    opacity: 0;
+  }
+}
+
+.warp-streaks-disk {
+  width: 220vmax;
+  height: 220vmax;
+  margin: auto;
+  border-radius: 50%;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg 3.2deg,
+    rgba(255, 255, 255, 0.07) 3.2deg 3.9deg
+  );
+  mask-image: radial-gradient(circle, black 0%, black 18%, transparent 62%);
+  animation: warp-streaks-spin 2.2s cubic-bezier(0.33, 0.9, 0.4, 1) forwards;
+}
+
+@keyframes burst-ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(0.12);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.welcome-burst-ring {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: min(130vw, 720px);
+  height: min(130vw, 720px);
+  border-radius: 50%;
+  border: 1px solid rgba(167, 139, 250, 0.45);
+  box-shadow:
+    0 0 40px rgba(124, 58, 237, 0.25),
+    inset 0 0 60px rgba(34, 211, 238, 0.08);
+  animation: burst-ring-expand 1.55s cubic-bezier(0.15, 0.85, 0.2, 1) forwards;
+}
+
+.welcome-burst-ring--late {
+  animation-delay: 0.14s;
+  border-color: rgba(34, 211, 238, 0.35);
+  width: min(115vw, 620px);
+  height: min(115vw, 620px);
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(36px) scale(0.96);
+    filter: blur(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-enter {
+  animation: hero-rise 1.05s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero-enter--badge {
+  animation-delay: 0.18s;
+}
+.hero-enter--title {
+  animation-delay: 0.38s;
+}
+.hero-enter--sub {
+  animation-delay: 0.56s;
+}
+.hero-enter--cta {
+  animation-delay: 0.74s;
+}
+.hero-enter--hint {
+  animation-delay: 0.92s;
+}
+
+@keyframes hero-cta-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.9);
+    filter: blur(8px);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.03);
+    filter: blur(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero-cta-motion {
+  animation: hero-cta-pop 1.15s cubic-bezier(0.34, 1.3, 0.48, 1) both;
+  animation-delay: 0.74s;
+}
+
+@keyframes header-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.welcome-header-enter {
+  animation: header-enter 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes footer-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-footer-enter {
+  animation: footer-enter 0.9s ease both;
+  animation-delay: 1.1s;
+}
+
+/* Headline: readable display + living gradient (not ultra-wide Syne) */
+.welcome-headline-gradient {
+  background: linear-gradient(
+    110deg,
+    #ffffff 0%,
+    #f5f3ff 18%,
+    #c4b5fd 38%,
+    #22d3ee 58%,
+    #e9d5ff 78%,
+    #ffffff 100%
+  );
+  background-size: 240% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: headline-shimmer 9s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes headline-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.welcome-headline-glow {
+  text-shadow:
+    0 0 42px rgba(167, 139, 250, 0.35),
+    0 0 80px rgba(34, 211, 238, 0.12);
+}
+
+/* —— Route transitions: fade + subtle rise on every page mount —— */
+@keyframes route-fade-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.route-enter {
+  animation: route-fade-rise 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* —— Shimmer skeleton: replaces the "fake progress" pulse with a sweep —— */
+@keyframes shimmer-sweep {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-sweep 1.6s ease-in-out infinite;
+}
+
+/* —— Toast entrance: spring-ish rise + scale —— */
+@keyframes toast-rise {
+  from { opacity: 0; transform: translateY(14px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+.toast-enter {
+  animation: toast-rise 280ms cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+/* —— Boot splash: branded first-paint —— */
+.boot-splash-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 50% 20%, #1a0a3d 0%, #05030d 55%, #000 100%);
+  opacity: 1;
+  transition: opacity 280ms cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: none;
+}
+
+.boot-splash-root.is-fading {
+  opacity: 0;
+}
+
+.boot-splash-mark {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  filter: drop-shadow(0 0 32px rgba(124, 58, 237, 0.45));
+  animation: boot-mark-rise 1100ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.boot-splash-halo {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.30), transparent 65%);
+  filter: blur(20px);
+  animation: boot-halo-pulse 1400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes boot-mark-rise {
+  0%   { opacity: 0; transform: scale(0.82) translateY(12px); filter: blur(10px) drop-shadow(0 0 0 rgba(124, 58, 237, 0)); }
+  60%  { opacity: 1; transform: scale(1.04) translateY(-2px); filter: blur(0) drop-shadow(0 0 36px rgba(124, 58, 237, 0.55)); }
+  100% { opacity: 1; transform: scale(1) translateY(0);       filter: blur(0) drop-shadow(0 0 32px rgba(124, 58, 237, 0.45)); }
+}
+
+@keyframes boot-halo-pulse {
+  0%   { opacity: 0; transform: scale(0.4); }
+  55%  { opacity: 0.9; transform: scale(1.05); }
+  100% { opacity: 0.55; transform: scale(1); }
+}
+
+.boot-splash-root.is-reduced .boot-splash-mark,
+.boot-splash-root.is-reduced .boot-splash-halo {
+  animation: none;
+  transform: none;
+  filter: none;
+  opacity: 1;
+}
+
+/* ───────── Cinematic intro (first-visit warp jump) ───────── */
+.cinematic-intro {
+  background: #02010a;
+  animation: cinematic-intro-fade-in 320ms ease-out both;
+}
+
+.cinematic-intro--out {
+  animation: cinematic-intro-fade-out 650ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes cinematic-intro-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cinematic-intro-fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.06);
+    filter: blur(6px);
+  }
+}
+
+.cinematic-intro-stage {
+  /* Pull the whole title group a touch above optical centre so it does not
+     fight the canvas vanishing-point exactly in the middle. */
+  transform: translateY(-2vh);
+}
+
+.cinematic-intro-ring {
+  position: absolute;
+  inset: auto;
+  width: clamp(280px, 36vw, 460px);
+  height: clamp(280px, 36vw, 460px);
+  border-radius: 50%;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  box-shadow:
+    0 0 60px 8px rgba(124, 58, 237, 0.25) inset,
+    0 0 90px 12px rgba(34, 211, 238, 0.18);
+  animation: cinematic-intro-ring 5s cubic-bezier(0.2, 0.85, 0.25, 1) both;
+  opacity: 0;
+}
+
+@keyframes cinematic-intro-ring {
+  0%   { opacity: 0; transform: scale(0.05); }
+  20%  { opacity: 0.6; }
+  55%  { opacity: 0.9; transform: scale(1.0); }
+  100% { opacity: 0; transform: scale(2.4); }
+}
+
+.cinematic-intro-mark {
+  opacity: 0;
+  transform: translateY(14px) scale(0.86);
+  animation: cinematic-intro-mark 4.4s cubic-bezier(0.2, 0.7, 0.2, 1) 0.45s both;
+}
+
+.cinematic-intro-mark-halo {
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.55) 0%, transparent 70%);
+  filter: blur(10px);
+  animation: cinematic-intro-halo 3.2s ease-in-out 0.6s both;
+}
+
+@keyframes cinematic-intro-mark {
+  0%   { opacity: 0; transform: translateY(20px) scale(0.78); filter: blur(8px); }
+  18%  { opacity: 1; transform: translateY(0)    scale(1);    filter: blur(0px); }
+  85%  { opacity: 1; transform: translateY(0)    scale(1.02); }
+  100% { opacity: 0; transform: translateY(-12px) scale(1.06); }
+}
+
+@keyframes cinematic-intro-halo {
+  0%   { opacity: 0; transform: scale(0.6); }
+  35%  { opacity: 1; transform: scale(1.4); }
+  100% { opacity: 0; transform: scale(2); }
+}
+
+.cinematic-intro-kicker {
+  opacity: 0;
+  animation: cinematic-intro-rise 4.2s ease-out 1.05s both;
+}
+
+.cinematic-intro-title {
+  opacity: 0;
+  background: linear-gradient(110deg, #ffffff, #c4b5fd 36%, #67e8f9 78%, #ffffff);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation:
+    cinematic-intro-rise 4.4s ease-out 1.25s both,
+    cinematic-intro-shimmer 5.4s linear 1.25s both;
+}
+
+.cinematic-intro-sub {
+  opacity: 0;
+  animation: cinematic-intro-rise 4.0s ease-out 1.55s both;
+}
+
+@keyframes cinematic-intro-rise {
+  0%   { opacity: 0; transform: translateY(28px) scale(0.96); filter: blur(8px); letter-spacing: 0.4em; }
+  18%  { opacity: 1; transform: translateY(0)    scale(1);    filter: blur(0);   }
+  85%  { opacity: 1; transform: translateY(0)    scale(1.01); }
+  100% { opacity: 0; transform: translateY(-10px) scale(1.03); }
+}
+
+@keyframes cinematic-intro-shimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 220% 50%; }
+}
+
+.cinematic-intro-skip {
+  opacity: 0;
+  animation: cinematic-intro-skip-in 700ms ease-out 600ms both;
+}
+
+@keyframes cinematic-intro-skip-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cinematic-intro,
+  .cinematic-intro-ring,
+  .cinematic-intro-mark,
+  .cinematic-intro-mark-halo,
+  .cinematic-intro-kicker,
+  .cinematic-intro-title,
+  .cinematic-intro-sub,
+  .cinematic-intro-skip,
+  .starfield-welcome-root,
+  .warp-streaks-disk,
+  .welcome-burst-ring,
+  .welcome-burst-ring--late,
+  .hero-enter,
+  .hero-cta-motion,
+  .welcome-header-enter,
+  .welcome-footer-enter,
+  .welcome-headline-gradient,
+  .welcome-orb-glow,
+  .boot-splash-mark,
+  .boot-splash-halo,
+  .route-enter,
+  .skeleton-shimmer,
+  .toast-enter {
+    animation: none !important;
+    animation-delay: 0s !important;
+  }
+
+  .skeleton-shimmer {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .welcome-headline-gradient {
+    background: linear-gradient(110deg, #ffffff, #c4b5fd, #67e8f9);
+    background-size: 100% 100%;
+    background-position: 0 0;
+  }
+
+  .starfield-welcome-root {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .warp-streaks-disk {
+    opacity: 0 !important;
+  }
+
+  .welcome-burst-ring,
+  .welcome-burst-ring--late {
+    display: none;
+  }
+
+  .hero-enter,
+  .hero-cta-motion,
+  .welcome-header-enter,
+  .welcome-footer-enter {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .star {
+    animation: twinkle 6s ease-in-out infinite;
+  }
+}

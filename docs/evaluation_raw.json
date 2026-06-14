@@ -1,0 +1,792 @@
+{
+  "pairs": [
+    {
+      "planet": "Earth",
+      "style": "calm",
+      "seed": 7,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.9,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 1.8687,
+        "interval_entropy_bits": 0.9703,
+        "duration_entropy_bits": 2.8372,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.7333,
+        "pitch_range_semitones": 4.0,
+        "mean_melodic_step_semitones": 0.533,
+        "harmony_notes_per_step": 1.258,
+        "unique_pitch_ratio": 0.0968,
+        "pitch_entropy_bits": 1.3546,
+        "interval_entropy_bits": 1.0912,
+        "duration_entropy_bits": 2.8279,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 9.026
+    },
+    {
+      "planet": "Earth",
+      "style": "calm",
+      "seed": 13,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.9,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 1.8687,
+        "interval_entropy_bits": 0.9703,
+        "duration_entropy_bits": 2.992,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 4.0,
+        "mean_melodic_step_semitones": 0.8,
+        "harmony_notes_per_step": 1.194,
+        "unique_pitch_ratio": 0.0968,
+        "pitch_entropy_bits": 1.4382,
+        "interval_entropy_bits": 1.3629,
+        "duration_entropy_bits": 2.7601,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 9.086
+    },
+    {
+      "planet": "Earth",
+      "style": "calm",
+      "seed": 19,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.9,
+        "harmony_notes_per_step": 1.323,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 1.8687,
+        "interval_entropy_bits": 0.9703,
+        "duration_entropy_bits": 2.7885,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.7333,
+        "pitch_range_semitones": 4.0,
+        "mean_melodic_step_semitones": 0.533,
+        "harmony_notes_per_step": 1.226,
+        "unique_pitch_ratio": 0.0968,
+        "pitch_entropy_bits": 1.3546,
+        "interval_entropy_bits": 1.0912,
+        "duration_entropy_bits": 2.9371,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.905
+    },
+    {
+      "planet": "Earth",
+      "style": "calm",
+      "seed": 23,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.9,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 1.8687,
+        "interval_entropy_bits": 0.9703,
+        "duration_entropy_bits": 2.8049,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.6667,
+        "pitch_range_semitones": 4.0,
+        "mean_melodic_step_semitones": 0.667,
+        "harmony_notes_per_step": 1.323,
+        "unique_pitch_ratio": 0.0968,
+        "pitch_entropy_bits": 1.4436,
+        "interval_entropy_bits": 1.2419,
+        "duration_entropy_bits": 2.8142,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 9.002
+    },
+    {
+      "planet": "Earth",
+      "style": "calm",
+      "seed": 42,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.9,
+        "harmony_notes_per_step": 1.355,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 1.8687,
+        "interval_entropy_bits": 0.9703,
+        "duration_entropy_bits": 2.8531,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.7333,
+        "pitch_range_semitones": 4.0,
+        "mean_melodic_step_semitones": 0.533,
+        "harmony_notes_per_step": 1.258,
+        "unique_pitch_ratio": 0.0968,
+        "pitch_entropy_bits": 1.3546,
+        "interval_entropy_bits": 1.0912,
+        "duration_entropy_bits": 2.8648,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.819
+    },
+    {
+      "planet": "Earth",
+      "style": "cinematic",
+      "seed": 7,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.4,
+        "harmony_notes_per_step": 1.29,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9668,
+        "interval_entropy_bits": 1.8595,
+        "duration_entropy_bits": 2.3146,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.633,
+        "harmony_notes_per_step": 1.258,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.8161,
+        "interval_entropy_bits": 1.9345,
+        "duration_entropy_bits": 2.1454,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 4.564
+    },
+    {
+      "planet": "Earth",
+      "style": "cinematic",
+      "seed": 13,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.4,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9668,
+        "interval_entropy_bits": 1.8595,
+        "duration_entropy_bits": 2.2104,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.6,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.7885,
+        "interval_entropy_bits": 1.9656,
+        "duration_entropy_bits": 2.2315,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 4.852
+    },
+    {
+      "planet": "Earth",
+      "style": "cinematic",
+      "seed": 19,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.4,
+        "harmony_notes_per_step": 1.355,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9668,
+        "interval_entropy_bits": 1.8595,
+        "duration_entropy_bits": 2.2554,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.733,
+        "harmony_notes_per_step": 1.194,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.845,
+        "interval_entropy_bits": 1.8323,
+        "duration_entropy_bits": 2.4362,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 4.757
+    },
+    {
+      "planet": "Earth",
+      "style": "cinematic",
+      "seed": 23,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.4,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9668,
+        "interval_entropy_bits": 1.8595,
+        "duration_entropy_bits": 2.3546,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.7,
+        "harmony_notes_per_step": 1.258,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.8852,
+        "interval_entropy_bits": 1.8683,
+        "duration_entropy_bits": 2.4132,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 4.807
+    },
+    {
+      "planet": "Earth",
+      "style": "cinematic",
+      "seed": 42,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.6,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.4,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9668,
+        "interval_entropy_bits": 1.8595,
+        "duration_entropy_bits": 2.1519,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 1.633,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.882,
+        "interval_entropy_bits": 1.9345,
+        "duration_entropy_bits": 2.062,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 4.812
+    },
+    {
+      "planet": "Mars",
+      "style": "calm",
+      "seed": 7,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.567,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.2874,
+        "interval_entropy_bits": 0.7665,
+        "duration_entropy_bits": 2.8049,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.1,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 3.4,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.319,
+        "interval_entropy_bits": 2.5357,
+        "duration_entropy_bits": 2.8097,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.573
+    },
+    {
+      "planet": "Mars",
+      "style": "calm",
+      "seed": 13,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.567,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.2874,
+        "interval_entropy_bits": 0.7665,
+        "duration_entropy_bits": 2.8405,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.1333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 3.233,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.3046,
+        "interval_entropy_bits": 2.8062,
+        "duration_entropy_bits": 2.7615,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.803
+    },
+    {
+      "planet": "Mars",
+      "style": "calm",
+      "seed": 19,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.567,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.2874,
+        "interval_entropy_bits": 0.7665,
+        "duration_entropy_bits": 2.9433,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 3.633,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.3112,
+        "interval_entropy_bits": 2.8574,
+        "duration_entropy_bits": 2.8662,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.533
+    },
+    {
+      "planet": "Mars",
+      "style": "calm",
+      "seed": 23,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.567,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.2874,
+        "interval_entropy_bits": 0.7665,
+        "duration_entropy_bits": 2.8536,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.1333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 3.767,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.3112,
+        "interval_entropy_bits": 3.0696,
+        "duration_entropy_bits": 2.8937,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.662
+    },
+    {
+      "planet": "Mars",
+      "style": "calm",
+      "seed": 42,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.8667,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 0.567,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.2874,
+        "interval_entropy_bits": 0.7665,
+        "duration_entropy_bits": 2.9339,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0333,
+        "pitch_range_semitones": 10.0,
+        "mean_melodic_step_semitones": 4.333,
+        "harmony_notes_per_step": 1.0,
+        "unique_pitch_ratio": 0.1613,
+        "pitch_entropy_bits": 2.319,
+        "interval_entropy_bits": 3.1078,
+        "duration_entropy_bits": 2.7989,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 8.552
+    },
+    {
+      "planet": "Mars",
+      "style": "cinematic",
+      "seed": 7,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.7667,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 0.767,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9826,
+        "interval_entropy_bits": 1.0518,
+        "duration_entropy_bits": 2.3573,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 3.867,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9433,
+        "interval_entropy_bits": 3.0159,
+        "duration_entropy_bits": 2.3921,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 5.371
+    },
+    {
+      "planet": "Mars",
+      "style": "cinematic",
+      "seed": 13,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.7667,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 0.767,
+        "harmony_notes_per_step": 1.516,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9826,
+        "interval_entropy_bits": 1.0518,
+        "duration_entropy_bits": 2.3987,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 3.7,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9339,
+        "interval_entropy_bits": 3.0397,
+        "duration_entropy_bits": 2.4823,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 5.716
+    },
+    {
+      "planet": "Mars",
+      "style": "cinematic",
+      "seed": 19,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.7667,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 0.767,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9826,
+        "interval_entropy_bits": 1.0518,
+        "duration_entropy_bits": 2.4823,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 3.733,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9063,
+        "interval_entropy_bits": 3.0145,
+        "duration_entropy_bits": 2.3479,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 5.615
+    },
+    {
+      "planet": "Mars",
+      "style": "cinematic",
+      "seed": 23,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.7667,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 0.767,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9826,
+        "interval_entropy_bits": 1.0518,
+        "duration_entropy_bits": 2.2796,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0333,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 3.6,
+        "harmony_notes_per_step": 1.419,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9339,
+        "interval_entropy_bits": 3.1362,
+        "duration_entropy_bits": 2.2315,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 5.656
+    },
+    {
+      "planet": "Mars",
+      "style": "cinematic",
+      "seed": 42,
+      "days": 30,
+      "baseline_metrics": {
+        "repetition_rate": 0.7667,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 0.767,
+        "harmony_notes_per_step": 1.452,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9826,
+        "interval_entropy_bits": 1.0518,
+        "duration_entropy_bits": 2.4331,
+        "steps_count": 31.0
+      },
+      "ai_metrics": {
+        "repetition_rate": 0.0,
+        "pitch_range_semitones": 12.0,
+        "mean_melodic_step_semitones": 3.467,
+        "harmony_notes_per_step": 1.387,
+        "unique_pitch_ratio": 0.2581,
+        "pitch_entropy_bits": 2.9221,
+        "interval_entropy_bits": 2.7819,
+        "duration_entropy_bits": 2.3796,
+        "steps_count": 31.0
+      },
+      "nasa_cached": [
+        true,
+        true
+      ],
+      "walltime_sec": 5.499
+    }
+  ],
+  "reports": [
+    {
+      "metric": "duration_entropy_bits",
+      "n": 20,
+      "baseline_mean": 2.5945,
+      "baseline_std": 0.2829,
+      "ai_mean": 2.5728,
+      "ai_std": 0.2791,
+      "mean_delta": -0.0217,
+      "wilcoxon_w": 84.5,
+      "p_value": 0.444041,
+      "cohens_dz": -0.2151,
+      "rank_biserial": -0.1952,
+      "direction": "\u2248"
+    },
+    {
+      "metric": "harmony_notes_per_step",
+      "n": 20,
+      "baseline_mean": 1.2983,
+      "baseline_std": 0.1781,
+      "ai_mean": 1.2403,
+      "ai_std": 0.1571,
+      "mean_delta": -0.058,
+      "wilcoxon_w": 2.0,
+      "p_value": 0.003584,
+      "cohens_dz": -0.8347,
+      "rank_biserial": -0.9487,
+      "direction": "BL > AI *"
+    },
+    {
+      "metric": "interval_entropy_bits",
+      "n": 20,
+      "baseline_mean": 1.162,
+      "baseline_std": 0.4159,
+      "ai_mean": 2.2389,
+      "ai_std": 0.757,
+      "mean_delta": 1.0769,
+      "wilcoxon_w": 2.0,
+      "p_value": 0.00012,
+      "cohens_dz": 1.1182,
+      "rank_biserial": 0.981,
+      "direction": "AI > BL *"
+    },
+    {
+      "metric": "mean_melodic_step_semitones",
+      "n": 20,
+      "baseline_mean": 0.9085,
+      "baseline_std": 0.3075,
+      "ai_mean": 2.4049,
+      "ai_std": 1.3377,
+      "mean_delta": 1.4964,
+      "wilcoxon_w": 31.0,
+      "p_value": 0.005709,
+      "cohens_dz": 0.9729,
+      "rank_biserial": 0.7048,
+      "direction": "AI > BL *"
+    },
+    {
+      "metric": "pitch_entropy_bits",
+      "n": 20,
+      "baseline_mean": 2.5264,
+      "baseline_std": 0.4722,
+      "ai_mean": 2.3683,
+      "ai_std": 0.6132,
+      "mean_delta": -0.158,
+      "wilcoxon_w": 15.0,
+      "p_value": 0.000774,
+      "cohens_dz": -0.8097,
+      "rank_biserial": -0.8571,
+      "direction": "BL > AI *"
+    },
+    {
+      "metric": "pitch_range_semitones",
+      "n": 20,
+      "baseline_mean": 11.0,
+      "baseline_std": 1.0,
+      "ai_mean": 9.5,
+      "ai_std": 3.2787,
+      "mean_delta": -1.5,
+      "wilcoxon_w": 0.0,
+      "p_value": 0.025347,
+      "cohens_dz": -0.5774,
+      "rank_biserial": -1.0,
+      "direction": "BL > AI *"
+    },
+    {
+      "metric": "repetition_rate",
+      "n": 20,
+      "baseline_mean": 0.7667,
+      "baseline_std": 0.1027,
+      "ai_mean": 0.1983,
+      "ai_std": 0.2901,
+      "mean_delta": -0.5684,
+      "wilcoxon_w": 0.0,
+      "p_value": 8.3e-05,
+      "cohens_dz": -2.1965,
+      "rank_biserial": -1.0,
+      "direction": "BL > AI *"
+    },
+    {
+      "metric": "steps_count",
+      "n": 20,
+      "baseline_mean": 31.0,
+      "baseline_std": 0.0,
+      "ai_mean": 31.0,
+      "ai_std": 0.0,
+      "mean_delta": 0.0,
+      "wilcoxon_w": null,
+      "p_value": 1.0,
+      "cohens_dz": null,
+      "rank_biserial": null,
+      "direction": "\u2248"
+    },
+    {
+      "metric": "unique_pitch_ratio",
+      "n": 20,
+      "baseline_mean": 0.2097,
+      "baseline_std": 0.0484,
+      "ai_mean": 0.1936,
+      "ai_std": 0.0684,
+      "mean_delta": -0.0161,
+      "wilcoxon_w": 0.0,
+      "p_value": 0.025347,
+      "cohens_dz": -0.5774,
+      "rank_biserial": -1.0,
+      "direction": "BL > AI *"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "data": "data/ml/style_sequences_8planets.jsonl,data/ml/birthday_sequences.jsonl",
+  "seed": 42,
+  "val_split": 0.1,
+  "epochs_total": 24,
+  "epochs_trained": 24,
+  "best_val_loss": 0.4571114299090012,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.682293,
+      "val_loss": 1.131284
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.916639,
+      "val_loss": 0.743894
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.675785,
+      "val_loss": 0.624607
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.590573,
+      "val_loss": 0.571219
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.54763,
+      "val_loss": 0.550576
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.519366,
+      "val_loss": 0.525769
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.497041,
+      "val_loss": 0.509176
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.479016,
+      "val_loss": 0.502171
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.465232,
+      "val_loss": 0.493959
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.451764,
+      "val_loss": 0.487123
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.441086,
+      "val_loss": 0.481603
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.430061,
+      "val_loss": 0.48375
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.422239,
+      "val_loss": 0.477448
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.411719,
+      "val_loss": 0.471936
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.400875,
+      "val_loss": 0.470372
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.391899,
+      "val_loss": 0.474802
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.383093,
+      "val_loss": 0.467958
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.375659,
+      "val_loss": 0.462431
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.366718,
+      "val_loss": 0.458752
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.359661,
+      "val_loss": 0.462553
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.352263,
+      "val_loss": 0.457993
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.345978,
+      "val_loss": 0.460666
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.337132,
+      "val_loss": 0.460533
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.330238,
+      "val_loss": 0.457111
+    }
+  ]
+}

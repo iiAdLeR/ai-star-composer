@@ -1,0 +1,94 @@
+مصادر MIDI للمشروع — التزام المذكرة
+====================================
+
+روابط تحميل معروفة (ليس «ستايل المشروع» جاهزاً — انظر الجدول أدناه)
+--------------------------------------------------------------------
+  MAESTRO v3.0.0 (بيانو كلاسيكي/احترافي، CC BY-NC-SA 4.0 — راجع LICENSE داخل الأرشيف):
+    - صفحة Magenta:  https://magenta.tensorflow.org/datasets/maestro
+    - مرآة أخرى:     https://magenta.withgoogle.com/datasets/maestro
+    - عملياً للتدريب غالباً يكفي أرشيف MIDI فقط (~نحو 56 MB مضغوط): maestro-v3.0.0-midi.zip
+      (الرابط المباشر يظهر في الصفحة أعلاه؛ يتغيّر أحياناً فافتح الصفحة وحمّل من هناك.)
+
+  Lakh MIDI Dataset (LMD) — تنوّع ضخم (روك/بوب/إلخ) مع تحفّظ على حقوق الملفات الفردية:
+    - المشروع والمرايا:  https://colinraffel.com/projects/lmd
+    - التحميل عادةً عبر روابط في الصفحة (lmd_full / lmd_matched / …) — حسب سعتك القرصية.
+    - ليس بيانو فقط: الملفات تختلف (فرق، جيتار، أورغ، …) حسب الأغنية.
+
+  مصادر أخرى ليست «بيانو فقط» (multitrack / إيقاع / بوب رمزي)
+  -----------------------------------------------------------
+    Slakh2100 — مقطوعات متعددة المصادر (بيانو، جيتار، باس، طبول…) مبنية من Lakh بصيغة منفصلة:
+      https://www.slakh.com/
+      Zenodo (إصدارات محدثة مثل redux):  https://zenodo.org/search?q=slakh
+      حجم كبير جداً؛ راجع شروط الاستخدام في موقع المشروع.
+
+    Groove MIDI Dataset — عزف طبول إنساني + MIDI محاذٍ (Magenta، CC BY 4.0):
+      https://magenta.tensorflow.org/datasets/groove
+      Expanded Groove (E-GMD) — نسخة MIDI-only مضغوطة للتجارب:
+      https://magenta.tensorflow.org/datasets/e-gmd
+
+    ComMU — آلاف عينات MIDI قصيرة، عدة مسارات، ميتاداتا (نوع آلة، BPM، …) ورقة NeurIPS 2022:
+      https://github.com/pozalabs/ComMU-code
+      (رابط أرشيف البيانات في README المستودع/الورقة.)
+
+    Pop-K MIDI Dataset — ليد بوب + كورد + باس (رمزي منظم للتدريب على بوب):
+      https://github.com/patchbanks/Pop-K-MIDI-Dataset
+
+    ملاحظة تقنية:  ml/ingest_external_midi.py  يدمج كل القنوات في تسلسل زمني واحد من النوتات؛
+    مع multitrack heavy قد يختلط اللحن مع الباس/الإيقاع — إن احتجت «لحن فقط» لاحقاً صفِّ مساراً
+    واحداً في mido أو وسّع السكربت.
+
+  ملاحظة للستايلات الأربعة في التطبيق:
+    - لا يوجد «حزمة واحدة لكل ستايل» بأسماء calm/pop/study/cinematic.
+    - MAESTRO يميل لـ study/calm (كلاسيكي هادئ).
+    - Lakh يعطي عينات أقرب لـ pop/روك إذا فرزت ملفاتاً أو مجلدات فرعية (يدوياً أو بفرضيات بسيطة).
+    - cinematic: مقطوعات سينمائية كـ MIDI غالباً ترخيصها غامض — تجنّبها للمذكرة إلا بمصدر واضح.
+
+  لتدريب LSTM بشرط ستايل (style_idx 0..3):
+    - المصدر الرسمي لأركان المشروع:  ml/export_style_sequences.py  (NASA + generate_events لكل ستايل).
+    - MAESTRO/Lakh عبر ml/ingest_external_midi.py لا تضيف style_idx تلقائياً؛ إمّا تدريب بدون شرط ستايل
+      (--style-conditioned off) أو دمج يدوي/سكربت يضيف style_idx لكل سطر JSONL حسب مجلد المصدر.
+
+تنظيم المجلدات
+--------------
+  لا تضع Lakh أو أي مجموعة ثانية *داخل* مجلد إصدار MAESTRO (maestro-v3.0.0):
+  ذلك يخلط المصادر والتراخيص ويصعّب التحديث أو إعادة تحميل MAESTRO.
+  الأفضل:
+    data/external_midi/maestro-v3.0.0/   ← فقط ملفات MAESTRO
+    data/external_midi/lakh_sample/     ← عيّنة Lakh مفكوكة هنا
+  ثم استورد كل مجلد لملف JSONL منفصل وادمجها بـ merge_external_jsonl إن رغبت.
+
+الستايلات + LSTM
+----------------
+  - لتدريب نموذج يفرّق بين الستايلات الأربعة: استخدم  ml/export_style_sequences.py
+    ثم  ml/train_sequence_lstm.py  (يكتشف style_idx في JSONL تلقائياً).
+  - MAESTRO/Lakh: تدريب عام على «فخامة» أنماط بيانو/بوب من الملفات، بدون تسمية ستايل المشروع.
+
+1) MAESTRO v3.0.0 (اللي عندك تحت data/external_midi/maestro-v3.0.0/)
+   - الملف LICENSE داخل المجلد يقول: Creative Commons
+     Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0).
+   - يعني: لازم ذكر المصدر + نفس الرخصة للمشتقات + الاستخدام غير التجاري
+     (راجع نص الرخصة مع مشرفكم إذا كان العرض أو المشروع له بعد تجاري).
+   - الاستشهاد الأكاديمي المعتاد: ورقة MAESTRO (Curtis et al.) + رابط Magenta.
+
+2) Lakh MIDI Dataset (LMD) — للتنوع لاحقاً
+   - الصفحة الرسمية للمشروع: https://colinraffel.com/projects/lmd
+   - التوزيع العام للـ LMD يُذكر عادة كـ CC-BY مع الاستشهاد بأطروحة/ورقة Raffel؛
+     لكن ملفات MIDI داخل المجموعة قد تكون خاضعة لحقوق مكوّنين مختلفين —
+     اقرأ README الخاص بالمجموعة والشروط قبل الاستخدام في تخرّج رسمي.
+   - تحميل (أمثلة من المرايا الرسمية المذكورة في المشروع):
+     lmd_full / lmd_matched / lmd_aligned — حسب حاجتكم وحجم القرص.
+
+3) مواقع MIDI عشوائية
+   - غير موصى بها للمذكرة الرسمية إن لم يكن المصدر والترخيص واضحين.
+
+أوامر مقترحة بعد التحميل
+-------------------------
+  MAESTRO فقط:
+    python -m ml.ingest_external_midi --input-dir data/external_midi/maestro-v3.0.0 --output data/ml/external_notes_maestro.jsonl
+
+  MAESTRO + مجلد آخر (مثلاً عيّنة Lakh مفكوكة تحت data/external_midi/lakh_sample/):
+    python -m ml.ingest_external_midi --input-dir data/external_midi/lakh_sample --output data/ml/external_notes_lakh.jsonl
+    python -m ml.merge_external_jsonl data/ml/external_notes_maestro.jsonl data/ml/external_notes_lakh.jsonl -o data/ml/external_notes_all.jsonl
+
+  تدريب:
+    python -m ml.train_sequence_lstm --data data/ml/external_notes_all.jsonl --epochs 20

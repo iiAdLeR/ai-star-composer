@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none" role="img" aria-label="AI Star Composer">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="20%" r="80%" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a0a3d"/>
+      <stop offset="0.55" stop-color="#05030d"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="120" y1="120" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="0.55" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="markHalo" cx="240" cy="240" r="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wm" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.6">
+    <circle cx="120" cy="80" r="1.5" fill="#fff"/>
+    <circle cx="280" cy="160" r="1" fill="#fff"/>
+    <circle cx="440" cy="60" r="1.2" fill="#fff"/>
+    <circle cx="660" cy="120" r="1.4" fill="#fff"/>
+    <circle cx="820" cy="80" r="1" fill="#fff"/>
+    <circle cx="960" cy="220" r="1.6" fill="#fff"/>
+    <circle cx="1100" cy="100" r="1" fill="#fff"/>
+    <circle cx="200" cy="380" r="1.2" fill="#fff"/>
+    <circle cx="80" cy="520" r="1.5" fill="#fff"/>
+    <circle cx="1080" cy="540" r="1" fill="#fff"/>
+    <circle cx="980" cy="460" r="1.3" fill="#fff"/>
+    <circle cx="540" cy="520" r="1" fill="#fff"/>
+    <circle cx="380" cy="560" r="1.2" fill="#fff"/>
+  </g>
+
+  <g transform="translate(120, 195)">
+    <circle cx="120" cy="120" r="160" fill="url(#markHalo)"/>
+    <g stroke="url(#mark)" stroke-width="12" stroke-linecap="round">
+      <line x1="120" y1="32" x2="120" y2="110"/>
+      <line x1="190" y1="64" x2="138" y2="108"/>
+      <line x1="190" y1="176" x2="138" y2="132"/>
+      <line x1="50"  y1="176" x2="102" y2="132"/>
+      <line x1="50"  y1="64"  x2="102" y2="108"/>
+    </g>
+    <ellipse cx="196" cy="60" rx="16" ry="11" transform="rotate(-18 196 60)" fill="url(#mark)"/>
+    <path d="M196 60 q22 -8 16 -28" stroke="url(#mark)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <circle cx="120" cy="120" r="8" fill="#0a0620"/>
+  </g>
+
+  <g transform="translate(400, 280)">
+    <text x="0" y="0"
+      font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+      font-weight="800"
+      font-size="92"
+      letter-spacing="-4"
+      fill="url(#wm)">AI Star</text>
+    <text x="0" y="100"
+      font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+      font-weight="800"
+      font-size="92"
+      letter-spacing="-4"
+      fill="url(#wm)">Composer</text>
+    <text x="6" y="180"
+      font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+      font-weight="500"
+      font-size="28"
+      letter-spacing="-0.4"
+      fill="rgba(255,255,255,0.65)">NASA orbital data, transformed into music.</text>
+  </g>
+
+  <g transform="translate(120, 568)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#22d3ee" opacity="0.85"/>
+    <text x="26" y="13"
+      font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif"
+      font-weight="600"
+      font-size="14"
+      letter-spacing="2.6"
+      fill="rgba(196,181,253,0.85)">SONIFICATION · EDUCATIONAL · BILINGUAL</text>
+  </g>
+</svg>

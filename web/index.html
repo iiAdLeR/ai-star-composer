@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#05030d" />
+
+    <title>AI Star Composer — NASA orbital data, transformed into music</title>
+    <meta name="description" content="Sonify NASA Horizons orbital data with an educational suite. Eight planets, dual-language EN/TR, AI vs baseline composition, side-by-side." />
+    <meta name="application-name" content="AI Star Composer" />
+    <meta name="apple-mobile-web-app-title" content="AI Star Composer" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo-mark.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Preload the boot-splash logo so the first paint isn't blocked by an
+         SVG fetch. fetchpriority=high tells the browser this asset is on the
+         critical path even before scripts evaluate. -->
+    <link rel="preload" as="image" href="/logo-mark.svg" type="image/svg+xml" fetchpriority="high" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AI Star Composer" />
+    <meta property="og:title" content="AI Star Composer — NASA orbital data, transformed into music" />
+    <meta property="og:description" content="Eight planets. Real NASA Horizons orbital data. AI vs baseline sonification, side-by-side. Educational suite, bilingual (EN/TR)." />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Star Composer" />
+    <meta name="twitter:description" content="NASA orbital data, transformed into music. Educational suite, AI vs baseline sonification." />
+    <meta name="twitter:image" content="/og-image.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* FOUC guard: paint a deep-space gradient before React hydrates so users
+         never see a white flash on slow networks. The body class swaps cleanly
+         once the first frame mounts (no flash, no layout shift). */
+      html, body {
+        background:
+          radial-gradient(ellipse at 50% 0%, #1a0a3d 0%, #05030d 55%, #000 100%);
+        color: #e8e6f2;
+      }
+      #root:empty::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 60%, rgba(124,58,237,0.18), transparent 60%);
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding:2rem;font-family:sans-serif;color:#fff;background:#05030d;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center">
+        AI Star Composer requires JavaScript to run. Please enable it and reload.
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

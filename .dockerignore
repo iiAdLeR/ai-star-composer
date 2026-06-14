@@ -1,0 +1,40 @@
+.git
+.gitignore
+.github
+.venv
+venv
+env
+__pycache__
+**/__pycache__
+*.pyc
+.env
+.env.local
+.vscode
+.idea
+
+# Web build artifacts (not needed by backend)
+web/node_modules
+web/dist
+web/.vite
+
+# Large data — must NOT go into the backend image
+data/cache
+data/gifts
+data/missions
+data/external_midi
+data/ml/*.jsonl
+data/*.json
+ml/checkpoints/*.pt
+ml/checkpoints/*.joblib
+
+# Generated audio
+outputs/*.wav
+outputs/*.mid
+outputs/*.midi
+
+# Optional heavy assets
+assets/soundfonts/*.sf2
+
+# Docs (not needed at runtime)
+docs/
+notebooks/

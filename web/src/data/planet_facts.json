@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-13",
+  "license": "Content derived from NASA/JPL public-domain fact sheets; see citations on each planet.",
+  "planets": {
+    "Mercury": {
+      "name": "Mercury",
+      "name_ar": "عطارد",
+      "name_tr": "Merkür",
+      "symbol": "☿",
+      "tagline": "The Sun's closest companion — a sunbaked rock with a 176-day solar day.",
+      "tagline_tr": "Güneş'in en yakın yoldaşı — 176 günlük güneş günü olan kavrulmuş bir kaya.",
+      "discovery_year_text": "Known since antiquity (formally cataloged by Greeks ~2500 BCE)",
+      "discovered_by": "Pre-historic / Greco-Roman astronomers",
+      "named_after": "Roman god Mercury, swift messenger — for its rapid orbital motion.",
+      "physics": {
+        "mean_distance_au": 0.387,
+        "orbital_period_days": 87.97,
+        "rotation_period_hours": 1407.5,
+        "axial_tilt_deg": 0.034,
+        "eccentricity": 0.2056,
+        "mean_radius_km": 2439.7,
+        "mass_kg": 3.30e23,
+        "gravity_g": 0.378,
+        "surface_temp_c": {"min": -173, "max": 427},
+        "moons": 0,
+        "rings": false
+      },
+      "atmosphere": {
+        "summary": "An ultra-thin exosphere of helium, hydrogen, oxygen, sodium and potassium — too sparse to sustain weather.",
+        "pressure_atm": 5e-15
+      },
+      "fun_facts": [
+        "A solar day on Mercury (sunrise to sunrise) lasts 176 Earth-days — twice its year.",
+        "Despite being closest to the Sun, ice persists in permanently shadowed polar craters.",
+        "Mercury's iron core takes up ~85% of its radius — proportionally the largest in the solar system."
+      ],
+      "fun_facts_tr": [
+        "Merkür'de bir güneş günü 176 Dünya günüdür — yılının iki katı.",
+        "Güneş'e en yakın olmasına rağmen sürekli gölgede kalan kutup kraterlerinde buz vardır.",
+        "Demir çekirdeği yarıçapının %85'ini kaplar — Güneş Sistemi'nde oransal olarak en büyük."
+      ],
+      "missions": [
+        {"name": "Mariner 10", "agency": "NASA", "year": 1974, "type": "Flyby", "result": "First close-up images of ~45% of the surface."},
+        {"name": "MESSENGER", "agency": "NASA", "year": 2004, "type": "Orbiter", "result": "Mapped 100% of the planet; confirmed water-ice at the poles."},
+        {"name": "BepiColombo", "agency": "ESA/JAXA", "year": 2018, "type": "Dual orbiter", "result": "Arrival at Mercury planned for 2026 — currently doing flybys."}
+      ],
+      "sound_signature": {
+        "tonality": "minor, sparse",
+        "rhythm": "irregular, slow",
+        "why": "The high orbital eccentricity (0.21) and slow rotation produce a piece with stretched note durations and dissonant intervals — the music sounds 'tense' because the velocity changes dramatically along the orbit."
+      },
+      "citations": [
+        {"label": "NASA Mercury Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"},
+        {"label": "NASA MESSENGER mission", "url": "https://science.nasa.gov/mission/messenger/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA15162.jpg",
+          "thumb": "https://photojournal.jpl.nasa.gov/jpeg/PIA15162.jpg",
+          "credit": "NASA / JHU APL / Carnegie Institution",
+          "caption": "Mercury in enhanced color from MESSENGER, showing variations in surface composition.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA15162"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA15553.jpg",
+            "credit": "NASA / JHU APL / Carnegie Institution",
+            "caption": "Caloris basin — Mercury's largest impact crater (~1,550 km wide).",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA15553"
+          },
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA17073.jpg",
+            "credit": "NASA / JHU APL / Carnegie Institution",
+            "caption": "Hokusai crater with bright ray system extending across the planet.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA17073"
+          }
+        ]
+      }
+    },
+    "Venus": {
+      "name": "Venus",
+      "name_ar": "الزهرة",
+      "name_tr": "Venüs",
+      "symbol": "♀",
+      "tagline": "Earth's evil twin — a runaway greenhouse hotter than any other planet.",
+      "tagline_tr": "Dünya'nın kötü ikizi — diğer tüm gezegenlerden sıcak bir kontrolsüz sera.",
+      "discovery_year_text": "Known since antiquity",
+      "discovered_by": "Visible to the naked eye throughout recorded history",
+      "named_after": "Roman goddess of love and beauty — the brightest planet in our sky.",
+      "physics": {
+        "mean_distance_au": 0.723,
+        "orbital_period_days": 224.7,
+        "rotation_period_hours": -5832.5,
+        "axial_tilt_deg": 177.36,
+        "eccentricity": 0.0068,
+        "mean_radius_km": 6051.8,
+        "mass_kg": 4.87e24,
+        "gravity_g": 0.907,
+        "surface_temp_c": {"min": 462, "max": 462},
+        "moons": 0,
+        "rings": false
+      },
+      "atmosphere": {
+        "summary": "Thick CO₂ atmosphere (96.5%) with sulfuric-acid clouds. Surface pressure equivalent to 900 m underwater on Earth.",
+        "pressure_atm": 92
+      },
+      "fun_facts": [
+        "Venus rotates 'backwards' (retrograde) — the Sun rises in the west.",
+        "A day on Venus (243 Earth-days) is longer than its year (225 Earth-days).",
+        "Surface lead would melt; volcanic activity may still be ongoing today."
+      ],
+      "fun_facts_tr": [
+        "Venüs ters yönde döner (retrograd) — Güneş batıdan doğar.",
+        "Venüs'te bir gün (243 Dünya günü) yılından (225 Dünya günü) daha uzundur.",
+        "Yüzeyde kurşun erir; volkanik aktivitenin hâlâ devam ediyor olabileceği düşünülüyor."
+      ],
+      "missions": [
+        {"name": "Venera 7", "agency": "USSR", "year": 1970, "type": "Lander", "result": "First successful soft landing on another planet — survived 23 minutes on the surface."},
+        {"name": "Magellan", "agency": "NASA", "year": 1989, "type": "Orbiter", "result": "Radar-mapped 98% of the surface."},
+        {"name": "Akatsuki", "agency": "JAXA", "year": 2015, "type": "Orbiter", "result": "Studies Venusian atmosphere and super-rotation."},
+        {"name": "DAVINCI / VERITAS", "agency": "NASA", "year": 2031, "type": "Future", "result": "Planned atmospheric descent + comprehensive surface mapping."}
+      ],
+      "sound_signature": {
+        "tonality": "warm, lush",
+        "rhythm": "steady, slow",
+        "why": "Near-circular orbit (eccentricity 0.007) and slow motion give a serene, steady piece. The dense atmosphere has no direct musical mapping in our model — only the orbital dynamics drive the sound."
+      },
+      "citations": [
+        {"label": "NASA Venus Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"},
+        {"label": "JAXA Akatsuki mission", "url": "https://www.isas.jaxa.jp/en/missions/spacecraft/current/akatsuki.html"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA00271.jpg",
+          "credit": "NASA / JPL",
+          "caption": "Venus from Mariner 10 — the dense sulfuric-acid cloud layer is all we ever see.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA00271"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA00159.jpg",
+            "credit": "NASA / JPL / USGS",
+            "caption": "Maat Mons, an 8-km tall volcano on Venus (Magellan radar with vertical exaggeration).",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA00159"
+          },
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA00224.jpg",
+            "credit": "NASA / JPL",
+            "caption": "Hemispheric view of Venus assembled from Magellan radar mosaics.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA00224"
+          }
+        ]
+      }
+    },
+    "Earth": {
+      "name": "Earth",
+      "name_ar": "الأرض",
+      "name_tr": "Dünya",
+      "symbol": "♁",
+      "tagline": "The only world we know that hums with life — the baseline for everything.",
+      "tagline_tr": "Yaşamla mırıldanan bildiğimiz tek dünya — her şey için temel referans.",
+      "discovery_year_text": "Recognized as a planet by Copernicus (1543)",
+      "discovered_by": "Nicolaus Copernicus — heliocentric model",
+      "named_after": "Old English 'eorþe' meaning ground or soil — the only planet not named after a Greek/Roman god.",
+      "physics": {
+        "mean_distance_au": 1.0,
+        "orbital_period_days": 365.256,
+        "rotation_period_hours": 23.934,
+        "axial_tilt_deg": 23.44,
+        "eccentricity": 0.0167,
+        "mean_radius_km": 6371.0,
+        "mass_kg": 5.972e24,
+        "gravity_g": 1.0,
+        "surface_temp_c": {"min": -89, "max": 58},
+        "moons": 1,
+        "rings": false
+      },
+      "atmosphere": {
+        "summary": "78% nitrogen, 21% oxygen, 1% argon + trace CO₂ and water vapor. The only known atmosphere with free oxygen sustaining complex life.",
+        "pressure_atm": 1.0
+      },
+      "fun_facts": [
+        "Earth's magnetic field deflects solar wind that would otherwise strip the atmosphere — like Mars and Venus.",
+        "We are slowing down: a day was 23 hours during the dinosaur era due to tidal friction with the Moon.",
+        "70.8% of the surface is liquid water — uniquely abundant for its temperature."
+      ],
+      "fun_facts_tr": [
+        "Dünya'nın manyetik alanı, atmosferi soyacak güneş rüzgârını saptırır.",
+        "Yavaşlıyoruz: dinozorlar döneminde bir gün 23 saatti — Ay'la gel-git sürtünmesi sayesinde.",
+        "Yüzeyin %70.8'i sıvı su — sıcaklığı için benzersiz bir bolluk."
+      ],
+      "missions": [
+        {"name": "Apollo 8", "agency": "NASA", "year": 1968, "type": "Crewed flyby", "result": "First humans to see Earth from lunar orbit (Earthrise photograph)."},
+        {"name": "Landsat 1", "agency": "NASA/USGS", "year": 1972, "type": "Earth-obs orbiter", "result": "Started 54+ years of continuous global Earth imagery."},
+        {"name": "ISS", "agency": "NASA/Roscosmos/ESA/JAXA/CSA", "year": 1998, "type": "Crewed station", "result": "Continuously inhabited since November 2000."}
+      ],
+      "sound_signature": {
+        "tonality": "balanced, harmonic",
+        "rhythm": "steady, organic",
+        "why": "Earth's near-circular, well-tilted orbit produces the most 'consonant' baseline piece in the system — it's literally the reference our ears are tuned to."
+      },
+      "citations": [
+        {"label": "NASA Earth Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"},
+        {"label": "Apollo 8 Earthrise (NASA)", "url": "https://www.nasa.gov/history/50-years-ago-the-earthrise-photo/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://images-assets.nasa.gov/image/iss040e081320/iss040e081320~orig.jpg",
+          "credit": "NASA",
+          "caption": "Earth from the International Space Station — a blue marble suspended in space.",
+          "source_url": "https://images.nasa.gov/details/iss040e081320"
+        },
+        "gallery": [
+          {
+            "url": "https://images-assets.nasa.gov/image/as08-14-2383/as08-14-2383~orig.jpg",
+            "credit": "NASA / Bill Anders",
+            "caption": "Earthrise — Apollo 8, December 24 1968. Humanity's first view of Earth from another world.",
+            "source_url": "https://images.nasa.gov/details/as08-14-2383"
+          },
+          {
+            "url": "https://images-assets.nasa.gov/image/iss068e027856/iss068e027856~orig.jpg",
+            "credit": "NASA",
+            "caption": "Aurora borealis from the ISS — Earth's magnetic field deflecting solar wind.",
+            "source_url": "https://images.nasa.gov/details/iss068e027856"
+          }
+        ]
+      }
+    },
+    "Mars": {
+      "name": "Mars",
+      "name_ar": "المريخ",
+      "name_tr": "Mars",
+      "symbol": "♂",
+      "tagline": "The most explored world beyond Earth — a frozen desert with the largest volcano in the solar system.",
+      "tagline_tr": "Dünya dışındaki en çok keşfedilen dünya — Güneş Sistemi'nin en büyük volkanına sahip donmuş bir çöl.",
+      "discovery_year_text": "Known since antiquity; orbit characterized by Kepler (1609)",
+      "discovered_by": "Pre-historic; Kepler used Mars to derive his laws of planetary motion.",
+      "named_after": "Roman god of war — for its blood-red color in the sky.",
+      "physics": {
+        "mean_distance_au": 1.524,
+        "orbital_period_days": 686.98,
+        "rotation_period_hours": 24.623,
+        "axial_tilt_deg": 25.19,
+        "eccentricity": 0.0934,
+        "mean_radius_km": 3389.5,
+        "mass_kg": 6.39e23,
+        "gravity_g": 0.379,
+        "surface_temp_c": {"min": -143, "max": 35},
+        "moons": 2,
+        "rings": false
+      },
+      "atmosphere": {
+        "summary": "Thin CO₂ atmosphere (95%), surface pressure under 1% of Earth's. Global dust storms can darken the entire planet for months.",
+        "pressure_atm": 0.006
+      },
+      "fun_facts": [
+        "Olympus Mons stands 22 km tall — three times Mount Everest, atop a base larger than Arizona.",
+        "Mars has the same land area as Earth's dry continents combined — every grain of soil is potentially explorable.",
+        "Phobos, its larger moon, will crash into Mars or break into a ring within 50 million years."
+      ],
+      "fun_facts_tr": [
+        "Olympus Mons 22 km yüksekliğindedir — Everest'in üç katı, Arizona'dan büyük bir taban üzerinde.",
+        "Mars'ın kara alanı, Dünya'nın kuru kıtalarının toplamına eşittir.",
+        "Daha büyük uydusu Phobos, 50 milyon yıl içinde Mars'a çarpacak ya da bir halkaya parçalanacaktır."
+      ],
+      "missions": [
+        {"name": "Mariner 4", "agency": "NASA", "year": 1965, "type": "Flyby", "result": "First close-up photos of another planet — revealed cratered, lifeless surface."},
+        {"name": "Viking 1 & 2", "agency": "NASA", "year": 1976, "type": "Landers", "result": "First successful Mars landings; ran biology experiments (inconclusive)."},
+        {"name": "Curiosity", "agency": "NASA", "year": 2012, "type": "Rover", "result": "Confirmed Mars was once habitable; nuclear-powered, still operating."},
+        {"name": "Perseverance + Ingenuity", "agency": "NASA", "year": 2021, "type": "Rover + helicopter", "result": "Caching samples for future return; Ingenuity flew 72 times before retirement."}
+      ],
+      "sound_signature": {
+        "tonality": "shifting, dramatic",
+        "rhythm": "uneven, propulsive",
+        "why": "Eccentricity of 0.093 (5x Earth's) creates noticeable velocity swings along the orbit — the piece accelerates near perihelion (closest to Sun) and slows at aphelion, producing dramatic dynamic contrast."
+      },
+      "citations": [
+        {"label": "NASA Mars Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"},
+        {"label": "NASA Mars Exploration Program", "url": "https://science.nasa.gov/mars/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA00407.jpg",
+          "credit": "NASA / JPL / MSSS",
+          "caption": "Mars from Hubble Space Telescope — the global view that hides Olympus Mons in plain sight.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA00407"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA02049.jpg",
+            "credit": "NASA / JPL",
+            "caption": "Olympus Mons — at 22 km tall, the largest volcano in the solar system.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA02049"
+          },
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA24333.jpg",
+            "credit": "NASA / JPL-Caltech / MSSS",
+            "caption": "Perseverance rover's first 360° panorama from Jezero Crater.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA24333"
+          }
+        ]
+      }
+    },
+    "Jupiter": {
+      "name": "Jupiter",
+      "name_ar": "المشتري",
+      "name_tr": "Jüpiter",
+      "symbol": "♃",
+      "tagline": "Solar system heavyweight — 318 Earth masses of swirling storms and 95 known moons.",
+      "tagline_tr": "Güneş Sistemi'nin ağır siklesi — 318 Dünya kütlesi fırtınalar ve 95 bilinen uydu.",
+      "discovery_year_text": "Known since antiquity; Galileo's moons (1610)",
+      "discovered_by": "Galileo Galilei discovered the four largest moons in 1610 — first evidence of objects orbiting another body.",
+      "named_after": "Roman king of gods — fittingly the largest planet.",
+      "physics": {
+        "mean_distance_au": 5.204,
+        "orbital_period_days": 4332.6,
+        "rotation_period_hours": 9.925,
+        "axial_tilt_deg": 3.13,
+        "eccentricity": 0.0489,
+        "mean_radius_km": 69911,
+        "mass_kg": 1.898e27,
+        "gravity_g": 2.36,
+        "surface_temp_c": {"min": -145, "max": -145},
+        "moons": 95,
+        "rings": true
+      },
+      "atmosphere": {
+        "summary": "90% hydrogen, 10% helium — essentially a failed star. No solid surface; pressure crushes you below the cloud tops.",
+        "pressure_atm": 1.0
+      },
+      "fun_facts": [
+        "The Great Red Spot is a storm wider than Earth that has raged for at least 350 years.",
+        "Jupiter's gravitational influence shields the inner solar system from many comets and asteroids.",
+        "Its fastest rotation (under 10 h) flattens it visibly — it bulges 7% at the equator."
+      ],
+      "fun_facts_tr": [
+        "Büyük Kırmızı Leke, en az 350 yıldır süren ve Dünya'dan geniş bir fırtınadır.",
+        "Jüpiter'in çekim alanı, iç Güneş Sistemi'ni birçok kuyrukluyıldız ve asteroitten korur.",
+        "Çok hızlı dönmesi (10 saatten az) onu görünür şekilde düzleştirir — ekvatorda %7 şişer."
+      ],
+      "missions": [
+        {"name": "Pioneer 10/11", "agency": "NASA", "year": 1973, "type": "Flyby", "result": "First spacecraft to cross the asteroid belt and visit Jupiter."},
+        {"name": "Galileo", "agency": "NASA", "year": 1989, "type": "Orbiter + probe", "result": "Dropped a probe into Jupiter's atmosphere; studied moons for 8 years."},
+        {"name": "Juno", "agency": "NASA", "year": 2011, "type": "Polar orbiter", "result": "Polar orbits revealing the interior structure and powerful aurorae."},
+        {"name": "Europa Clipper", "agency": "NASA", "year": 2024, "type": "Orbiter (Europa)", "result": "Launched Oct 2024 to study Europa's subsurface ocean."}
+      ],
+      "sound_signature": {
+        "tonality": "majestic, broad",
+        "rhythm": "stately, slow",
+        "why": "Slow orbital motion at 5.2 AU produces sustained, low-register notes — paired with mild eccentricity, the piece has a regal, unhurried character."
+      },
+      "citations": [
+        {"label": "NASA Jupiter Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"},
+        {"label": "NASA Juno mission", "url": "https://science.nasa.gov/mission/juno/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA02873.jpg",
+          "credit": "NASA / JPL / Cassini",
+          "caption": "Jupiter from Cassini — the most detailed full-disk image ever taken.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA02873"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA21641.jpg",
+            "credit": "NASA / JPL-Caltech / SwRI / MSSS / Gerald Eichstädt / Seán Doran",
+            "caption": "Jupiter's south pole storms photographed by Juno — each oval is a cyclone hundreds of km wide.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA21641"
+          },
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA22946.jpg",
+            "credit": "NASA / JPL-Caltech / SwRI / MSSS",
+            "caption": "The Great Red Spot in close-up from Juno — wider than Earth.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA22946"
+          }
+        ]
+      }
+    },
+    "Saturn": {
+      "name": "Saturn",
+      "name_ar": "زحل",
+      "name_tr": "Satürn",
+      "symbol": "♄",
+      "tagline": "The crown jewel — rings of pure ice and a moon with hydrocarbon lakes.",
+      "tagline_tr": "Tacın incisi — saf buz halkaları ve hidrokarbon gölleri olan bir uydu.",
+      "discovery_year_text": "Known since antiquity; rings discovered by Galileo (1610), correctly identified by Huygens (1655)",
+      "discovered_by": "Galileo first saw 'ears'; Christiaan Huygens identified them as rings.",
+      "named_after": "Roman god of time and agriculture; Greek Cronus.",
+      "physics": {
+        "mean_distance_au": 9.583,
+        "orbital_period_days": 10759.2,
+        "rotation_period_hours": 10.656,
+        "axial_tilt_deg": 26.73,
+        "eccentricity": 0.0565,
+        "mean_radius_km": 58232,
+        "mass_kg": 5.683e26,
+        "gravity_g": 0.916,
+        "surface_temp_c": {"min": -178, "max": -178},
+        "moons": 146,
+        "rings": true
+      },
+      "atmosphere": {
+        "summary": "Hydrogen-helium giant like Jupiter. Persistent hexagonal storm at the north pole, 30,000 km wide.",
+        "pressure_atm": 1.0
+      },
+      "fun_facts": [
+        "Saturn is less dense than water — it would float (if you had a big enough ocean).",
+        "Titan, its largest moon, has rivers and lakes of liquid methane and ethane.",
+        "The rings are mostly water ice, only ~10–30 meters thick despite spanning 282,000 km."
+      ],
+      "fun_facts_tr": [
+        "Satürn sudan daha az yoğundur — yeterince büyük bir okyanusta yüzerdi.",
+        "En büyük uydusu Titan'da sıvı metan ve etan nehirleri ve gölleri vardır.",
+        "Halkaları çoğunlukla su buzu; 282.000 km'ye yayılmasına rağmen yalnızca 10–30 m kalınlığındadır."
+      ],
+      "missions": [
+        {"name": "Pioneer 11", "agency": "NASA", "year": 1979, "type": "Flyby", "result": "First spacecraft to visit Saturn."},
+        {"name": "Voyager 1 & 2", "agency": "NASA", "year": 1980, "type": "Flybys", "result": "Detailed images of rings and moons; Voyager 1 now in interstellar space."},
+        {"name": "Cassini–Huygens", "agency": "NASA/ESA/ASI", "year": 1997, "type": "Orbiter + lander", "result": "13 years in orbit; Huygens landed on Titan — only landing in the outer solar system."},
+        {"name": "Dragonfly", "agency": "NASA", "year": 2034, "type": "Future rotorcraft", "result": "Planned octocopter to explore Titan's surface."}
+      ],
+      "sound_signature": {
+        "tonality": "ethereal, layered",
+        "rhythm": "very slow, sustained",
+        "why": "29.5-year orbit gives the slowest tempo of any visible planet in our model — sustained, almost ambient texture with subtle ring-like resonances from the harmonic layer."
+      },
+      "citations": [
+        {"label": "NASA Saturn Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html"},
+        {"label": "NASA Cassini mission", "url": "https://science.nasa.gov/mission/cassini/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA17172.jpg",
+          "credit": "NASA / JPL-Caltech / Space Science Institute",
+          "caption": "Saturn from Cassini — the rings cast their iconic shadow across the southern hemisphere.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA17172"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA09188.jpg",
+            "credit": "NASA / JPL / Space Science Institute",
+            "caption": "Saturn's hexagonal north-polar storm — 30,000 km wide, persistent for decades.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA09188"
+          },
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA07873.jpg",
+            "credit": "NASA / JPL / Space Science Institute",
+            "caption": "Titan, Saturn's largest moon, with hydrocarbon lakes (Cassini radar).",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA07873"
+          }
+        ]
+      }
+    },
+    "Uranus": {
+      "name": "Uranus",
+      "name_ar": "أورانوس",
+      "name_tr": "Uranüs",
+      "symbol": "♅",
+      "tagline": "The sideways ice giant — rotating on its side with a 42-year-long polar night.",
+      "tagline_tr": "Yan yatmış buz devi — yan yatarak dönen ve 42 yıl süren kutup gecesine sahip.",
+      "discovery_year_text": "Discovered 1781",
+      "discovered_by": "William Herschel — first planet discovered with a telescope.",
+      "named_after": "Greek sky-god Ouranos (the only planet named after a Greek rather than Roman deity).",
+      "physics": {
+        "mean_distance_au": 19.18,
+        "orbital_period_days": 30688.5,
+        "rotation_period_hours": -17.24,
+        "axial_tilt_deg": 97.77,
+        "eccentricity": 0.0457,
+        "mean_radius_km": 25362,
+        "mass_kg": 8.681e25,
+        "gravity_g": 0.889,
+        "surface_temp_c": {"min": -224, "max": -224},
+        "moons": 28,
+        "rings": true
+      },
+      "atmosphere": {
+        "summary": "Hydrogen-helium with methane giving it a pale cyan color. Coldest planetary atmosphere in the solar system.",
+        "pressure_atm": 1.0
+      },
+      "fun_facts": [
+        "Uranus rotates almost perfectly on its side — likely from a massive ancient impact.",
+        "Its rings were discovered in 1977 by occulting a background star — 200 years after the planet itself.",
+        "Each pole spends 42 Earth-years in darkness, then 42 years in continuous sunlight."
+      ],
+      "fun_facts_tr": [
+        "Uranüs neredeyse mükemmel bir şekilde yanlamasına döner — muhtemelen büyük bir antik çarpışmadan dolayı.",
+        "Halkaları 1977'de bir arka plan yıldızının önünden geçişiyle keşfedildi — gezegenin kendisinden 200 yıl sonra.",
+        "Her kutbu 42 yıl karanlıkta, sonra 42 yıl sürekli güneş ışığında kalır."
+      ],
+      "missions": [
+        {"name": "Voyager 2", "agency": "NASA", "year": 1986, "type": "Flyby", "result": "The only spacecraft to visit Uranus — discovered 10 new moons and 2 new rings in a single flyby."},
+        {"name": "Uranus Orbiter Probe (proposed)", "agency": "NASA", "year": 2040, "type": "Future flagship", "result": "Top recommendation of the 2023 Planetary Science Decadal Survey."}
+      ],
+      "sound_signature": {
+        "tonality": "cold, alien",
+        "rhythm": "drifting, sparse",
+        "why": "84-year orbit produces extremely slow tempo. The extreme axial tilt has no direct sonification mapping but reinforces the 'wrong, sideways' feel."
+      },
+      "citations": [
+        {"label": "NASA Uranus Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html"},
+        {"label": "Voyager 2 at Uranus", "url": "https://science.nasa.gov/uranus/exploration/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA18182.jpg",
+          "credit": "NASA / JPL / Voyager 2",
+          "caption": "Uranus from Voyager 2 — almost featureless in visible light, hiding storms beneath methane haze.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA18182"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA01977.jpg",
+            "credit": "NASA / JPL",
+            "caption": "Uranus's rings imaged by Voyager 2 — narrow, dark and only 200 years known to humans.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA01977"
+          },
+          {
+            "url": "https://images-assets.nasa.gov/image/PIA17306/PIA17306~orig.jpg",
+            "credit": "NASA / ESA / STScI",
+            "caption": "Uranus and its rings imaged by Hubble across decades — seasonal changes visible.",
+            "source_url": "https://images.nasa.gov/details/PIA17306"
+          }
+        ]
+      }
+    },
+    "Neptune": {
+      "name": "Neptune",
+      "name_ar": "نبتون",
+      "name_tr": "Neptün",
+      "symbol": "♆",
+      "tagline": "The windy ocean of ice — 2,100 km/h winds and a 165-year orbit.",
+      "tagline_tr": "Buz okyanusu, rüzgârlı — 2.100 km/sa rüzgârlar ve 165 yıllık yörünge.",
+      "discovery_year_text": "Discovered 1846 — by mathematics first",
+      "discovered_by": "Predicted by Le Verrier and Adams from Uranus's orbit; observed by Galle within 1° of prediction.",
+      "named_after": "Roman god of the sea — for its deep blue color.",
+      "physics": {
+        "mean_distance_au": 30.07,
+        "orbital_period_days": 60182,
+        "rotation_period_hours": 16.11,
+        "axial_tilt_deg": 28.32,
+        "eccentricity": 0.0113,
+        "mean_radius_km": 24622,
+        "mass_kg": 1.024e26,
+        "gravity_g": 1.12,
+        "surface_temp_c": {"min": -218, "max": -218},
+        "moons": 16,
+        "rings": true
+      },
+      "atmosphere": {
+        "summary": "Hydrogen-helium with methane absorbing red light, giving the deep blue hue. Fastest sustained winds in the solar system.",
+        "pressure_atm": 1.0
+      },
+      "fun_facts": [
+        "Neptune was the first planet discovered by mathematical prediction rather than observation.",
+        "Triton, its largest moon, orbits backwards and is likely a captured Kuiper Belt object.",
+        "Despite being further from the Sun than Uranus, it's slightly warmer due to internal heat."
+      ],
+      "fun_facts_tr": [
+        "Neptün, gözlem yerine matematiksel tahminle keşfedilen ilk gezegendir.",
+        "En büyük uydusu Triton ters yönde döner; muhtemelen yakalanmış bir Kuiper Kuşağı nesnesidir.",
+        "Güneş'e Uranüs'ten daha uzak olmasına rağmen, iç ısısı sayesinde biraz daha sıcaktır."
+      ],
+      "missions": [
+        {"name": "Voyager 2", "agency": "NASA", "year": 1989, "type": "Flyby", "result": "The only spacecraft to visit Neptune — discovered the Great Dark Spot and active geysers on Triton."}
+      ],
+      "sound_signature": {
+        "tonality": "deep, oceanic",
+        "rhythm": "very slow, weighty",
+        "why": "165-year orbit gives the longest-period notes in the entire system — produces deep, slow, sustained pieces with rich harmonic layers."
+      },
+      "citations": [
+        {"label": "NASA Neptune Fact Sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html"},
+        {"label": "Voyager 2 at Neptune", "url": "https://science.nasa.gov/neptune/exploration/"}
+      ],
+      "imagery": {
+        "hero": {
+          "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA01492.jpg",
+          "credit": "NASA / JPL / Voyager 2",
+          "caption": "Neptune from Voyager 2 — the Great Dark Spot was the size of Earth.",
+          "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA01492"
+        },
+        "gallery": [
+          {
+            "url": "https://photojournal.jpl.nasa.gov/jpeg/PIA00046.jpg",
+            "credit": "NASA / JPL",
+            "caption": "Triton, Neptune's largest moon — geyser-active and rotating opposite to the planet.",
+            "source_url": "https://photojournal.jpl.nasa.gov/catalog/PIA00046"
+          },
+          {
+            "url": "https://images-assets.nasa.gov/image/PIA22687/PIA22687~orig.jpg",
+            "credit": "NASA / ESA / STScI",
+            "caption": "Neptune by JWST — the rings are once again clearly visible after Voyager 2.",
+            "source_url": "https://images.nasa.gov/details/PIA22687"
+          }
+        ]
+      }
+    }
+  }
+}
