@@ -316,6 +316,11 @@ export function PlanetPicker3D({ value, onChange, className = "" }: PlanetPicker
   const [fxEnabled, setFxEnabled] = useState(true);
   const [quality, setQuality] = useState<QualityLevel>("high");
   const [fps, setFps] = useState(60);
+  // The blurb card covers the planet on phones (the 3D viewport is only
+  // 50dvh tall there). We hide it by default on small screens and expose a
+  // tiny info toggle so the user can summon it on demand without ever
+  // losing sight of the planet on first paint.
+  const [infoOpen, setInfoOpen] = useState(false);
 
   const dragStartX = useRef(0);
   const dragStartTwist = useRef(0);
@@ -452,7 +457,23 @@ export function PlanetPicker3D({ value, onChange, className = "" }: PlanetPicker
           </Suspense>
         </Canvas>
 
-        <div className="pointer-events-none absolute left-3 top-3 z-20 max-w-[min(18rem,62vw)] rounded-xl border border-white/15 bg-black/45 p-2.5 text-xs backdrop-blur-md">
+        {/* Mobile info toggle: a small "i" pill that does not occlude the
+            planet. Tap to peek the blurb, tap again to dismiss. */}
+        <button
+          type="button"
+          onClick={() => setInfoOpen((v) => !v)}
+          className="pointer-events-auto absolute left-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/20 bg-black/55 text-sm font-semibold text-cyan-100 shadow-lg shadow-black/40 backdrop-blur-md transition hover:border-cyan-400/45 hover:bg-cyan-500/15 sm:hidden"
+          aria-label={infoOpen ? t("studio.planetPicker.hideInfo", "Hide info") : t("studio.planetPicker.showInfo", "Show info")}
+          aria-expanded={infoOpen}
+        >
+          <span aria-hidden>{infoOpen ? "×" : "i"}</span>
+        </button>
+
+        <div
+          className={`pointer-events-none absolute left-3 top-3 z-20 max-w-[min(18rem,62vw)] rounded-xl border border-white/15 bg-black/55 p-2.5 text-xs backdrop-blur-md transition ${
+            infoOpen ? "block translate-y-12 opacity-100" : "hidden opacity-0"
+          } sm:block sm:translate-y-0 sm:opacity-100`}
+        >
           <p className="font-semibold text-cyan-100">{PLANETS[selectedIndex]}</p>
           <p className="mt-1 text-white/70">{facts.blurb}</p>
           <p className="mt-2 text-[11px] text-cyan-200/75">{t("studio.planetPicker.bestStyles")}: {styleNames}</p>
