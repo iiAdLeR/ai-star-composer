@@ -16,7 +16,7 @@ interface BirthdayStylePickerProps {
   accent: string;
 }
 
-/** Per-style decorative icon. Pure CSS / glyphs — no extra deps. */
+/** Per-style decorative icon. Pure CSS / glyphs - no extra deps. */
 const STYLE_GLYPH: Record<BirthdayStyleId, string> = {
   celebration: "✦",
   tender: "♡",
@@ -40,7 +40,7 @@ const STYLE_INSTRUMENTS_EN: Record<BirthdayStyleId, string> = {
  *   - decorative glyph + style name
  *   - one-line description (from the API; falls back to i18n)
  *   - BPM + instrument lineup
- * The whole card is the click target — much nicer than a `<select>` and
+ * The whole card is the click target - much nicer than a `<select>` and
  * the picker doubles as documentation for what each style actually sounds
  * like.
  */

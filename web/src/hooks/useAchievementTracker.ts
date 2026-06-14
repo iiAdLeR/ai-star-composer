@@ -16,7 +16,7 @@ import { describeAchievement, trackEvent } from "@/lib/achievements";
  *
  * Important: the cue is played *outside* the per-toast loop so chained
  * unlocks (e.g. when a session finally crosses the "5 pieces" threshold) only
- * ring once — overlapping arpeggios on the same beat sound like a bug.
+ * ring once - overlapping arpeggios on the same beat sound like a bug.
  */
 export function useAchievementTracker() {
   const { t } = useTranslation();

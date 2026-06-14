@@ -1,7 +1,7 @@
 /**
  * Tiny UI sound system.
  *
- * Six short cues synthesized on the fly via the Web Audio API — no asset
+ * Six short cues synthesized on the fly via the Web Audio API - no asset
  * downloads, no Howler/Tone dependency. Each cue is < 250ms so they layer
  * cleanly with text-to-speech and audio playback elsewhere in the app.
  *
@@ -36,17 +36,17 @@ interface CueSpec {
 }
 
 const CUES: Record<UiCue, CueSpec> = {
-  // A4 — same note as the boot splash, single warm tone.
+  // A4 - same note as the boot splash, single warm tone.
   boot: { notes: [[69, 700, 0.18]], osc: "sine", stagger: 0 },
-  // E5 — feather-light hover ping.
+  // E5 - feather-light hover ping.
   hover: { notes: [[76, 90, 0.06]], osc: "sine", stagger: 0 },
   // C major triad arpeggio (rising).
   success: { notes: [[72, 90, 0.18], [76, 90, 0.18], [79, 140, 0.20]], osc: "sine", stagger: 80 },
-  // Minor third descent — clearly "something went wrong" without alarm.
+  // Minor third descent - clearly "something went wrong" without alarm.
   error: { notes: [[67, 140, 0.20], [63, 220, 0.22]], osc: "triangle", stagger: 110 },
   // Single neutral G4.
   info: { notes: [[67, 110, 0.14]], osc: "sine", stagger: 0 },
-  // Sustained A4 — a beat shy of urgent.
+  // Sustained A4 - a beat shy of urgent.
   warning: { notes: [[69, 240, 0.16]], osc: "triangle", stagger: 0 },
   // Octave arpeggio C5–E5–G5–C6 (the unlock chime).
   achievement: { notes: [[72, 110, 0.20], [76, 110, 0.22], [79, 110, 0.22], [84, 220, 0.26]], osc: "triangle", stagger: 90 },

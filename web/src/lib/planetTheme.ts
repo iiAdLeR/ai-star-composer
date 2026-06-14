@@ -10,11 +10,11 @@ import type { PlanetName } from "@/lib/api";
  * piano-roll borders, etc). All values are inline-safe Tailwind-compatible
  * hex / rgba strings; consumers should *not* assume CSS variables exist.
  *
- *   accent      — primary chrome (border, focus ring, button)
- *   accentSoft  — translucent surface tint behind content
- *   glow        — outer glow / shadow color (planet showcase)
- *   text        — readable foreground on `accentSoft` (≥ 4.5:1 on #0b1023)
- *   tag         — pre-baked Tailwind classes for a small badge component
+ *   accent      - primary chrome (border, focus ring, button)
+ *   accentSoft  - translucent surface tint behind content
+ *   glow        - outer glow / shadow color (planet showcase)
+ *   text        - readable foreground on `accentSoft` (≥ 4.5:1 on #0b1023)
+ *   tag         - pre-baked Tailwind classes for a small badge component
  */
 export interface PlanetTheme {
   name: PlanetName;
@@ -28,7 +28,7 @@ export interface PlanetTheme {
 /**
  * Per-planet accents are spread along the hue wheel so two planets never
  * read as the same color from projection distance (the original palette had
- * four near-identical amber/yellow tones — Mercury, Venus, Jupiter, Saturn —
+ * four near-identical amber/yellow tones - Mercury, Venus, Jupiter, Saturn  - 
  * which collapsed at >2m viewing distance on a beamer).
  *
  * Saturation is intentionally kept in a narrow band (≈55-70%) so the eight

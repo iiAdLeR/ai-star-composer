@@ -428,7 +428,7 @@ export function PlanetPicker3D({ value, onChange, className = "" }: PlanetPicker
           dpr={dpr}
           onCreated={({ gl }) => {
             // ACESFilmic gives the bloomed highlights a much cleaner roll-off
-            // than the default linear tone mapping — planets stop blowing out
+            // than the default linear tone mapping - planets stop blowing out
             // at the bright limb when Bloom is active.
             gl.toneMapping = THREE.ACESFilmicToneMapping;
             gl.toneMappingExposure = 1.15;

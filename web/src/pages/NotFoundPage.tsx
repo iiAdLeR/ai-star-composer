@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Starfield } from "@/components/Starfield";
 
 /**
- * 404 page — "lost in space".
+ * 404 page - "lost in space".
  *
  * Reuses the calm Starfield variant (no warp burst) so accidental navigation
  * doesn't feel like a system crash. Two CTAs: back home, or jump into the

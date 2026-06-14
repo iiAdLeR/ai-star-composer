@@ -58,7 +58,7 @@ export function AchievementsPanel({ compact = false }: { compact?: boolean }) {
                   ? "border-cyan-400/40 bg-cyan-500/[0.08]"
                   : "border-white/10 bg-white/[0.03] opacity-50 grayscale"
               }`}
-              title={`${t(a.titleKey)} — ${t(a.descKey)}`}
+              title={`${t(a.titleKey)} - ${t(a.descKey)}`}
             >
               <span aria-hidden className="text-xl">{a.icon}</span>
               <span className="text-[10px] font-medium leading-tight text-white/85">

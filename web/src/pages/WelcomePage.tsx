@@ -91,24 +91,22 @@ export function WelcomePage() {
               <span className="absolute inset-0 bg-gradient-to-r from-cyan-400/0 via-white/20 to-violet-400/0 opacity-0 transition group-hover:opacity-100" />
               <span className="relative font-display tracking-tight">{t("welcome.ctaEnter")}</span>
             </Link>
-            <div className="flex flex-wrap items-center justify-center gap-1 text-sm text-white/55">
+            <div className="flex flex-wrap items-center justify-center gap-2.5 text-sm">
               <Link
                 to="/studio/demo"
-                className="rounded-lg px-4 py-2 font-medium transition hover:bg-white/[0.05] hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-white/15 bg-white/[0.06] px-4 py-2.5 font-medium text-white/85 backdrop-blur-md transition hover:-translate-y-px hover:border-white/30 hover:bg-white/[0.1] hover:text-white active:translate-y-0"
               >
                 {t("welcome.ctaDemo")}
               </Link>
-              <span aria-hidden className="text-white/20">·</span>
               <Link
                 to="/encyclopedia"
-                className="rounded-lg px-4 py-2 font-medium transition hover:bg-white/[0.05] hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-white/15 bg-white/[0.06] px-4 py-2.5 font-medium text-white/85 backdrop-blur-md transition hover:-translate-y-px hover:border-white/30 hover:bg-white/[0.1] hover:text-white active:translate-y-0"
               >
                 {t("welcome.ctaEncyclopedia")}
               </Link>
-              <span aria-hidden className="text-white/20">·</span>
               <Link
                 to="/birthday"
-                className="rounded-lg px-4 py-2 font-medium transition hover:bg-white/[0.05] hover:text-white"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-fuchsia-400/30 bg-fuchsia-500/10 px-4 py-2.5 font-medium text-fuchsia-100 backdrop-blur-md transition hover:-translate-y-px hover:border-fuchsia-400/50 hover:bg-fuchsia-500/15 hover:text-white active:translate-y-0"
               >
                 {t("welcome.ctaBirthday")}
               </Link>

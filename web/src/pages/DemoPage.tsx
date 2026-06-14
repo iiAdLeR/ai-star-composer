@@ -21,7 +21,7 @@ import { artifactUrl } from "@/lib/artifacts";
  * Generates a curated tour of three planets × calm style at a fixed seed
  * (so the committee can reproduce results), shows progress per step, and
  * auto-plays each piano-roll-backed clip in sequence. Everything runs against
- * `/generate`, no separate endpoint — the NASA Horizons cache means runs 2+ of
+ * `/generate`, no separate endpoint - the NASA Horizons cache means runs 2+ of
  * the same window come back in ~12ms.
  */
 
@@ -219,11 +219,13 @@ export function DemoPage() {
                 disabled={s?.status !== "ready"}
                 className="w-full text-left"
               >
-                <div className="flex items-center justify-between">
-                  <p className="font-display text-base font-semibold text-white">
+                <div className="flex items-center justify-between gap-2">
+                  <p className="min-w-0 truncate font-display text-base font-semibold text-white">
                     {idx + 1}. {step.planet}
                   </p>
-                  <span className={`rounded-full px-2 py-0.5 text-[10px] uppercase tracking-wider ${badgeCls}`}>
+                  <span
+                    className={`shrink-0 whitespace-nowrap rounded-full px-2.5 py-0.5 text-[10px] font-medium ${badgeCls}`}
+                  >
                     {badge}
                   </span>
                 </div>

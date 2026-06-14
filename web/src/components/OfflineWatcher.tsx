@@ -35,7 +35,7 @@ export function OfflineWatcher() {
       }
     };
 
-    // Initial state check — if we mount while offline, show the banner now.
+    // Initial state check - if we mount while offline, show the banner now.
     if (typeof navigator !== "undefined" && navigator.onLine === false) {
       showOffline();
     }

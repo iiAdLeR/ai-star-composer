@@ -13,7 +13,7 @@ import { getPlanetTheme } from "@/lib/planetTheme";
  * missions. Filterable by category and primary target. Each card surfaces
  * a one-line summary, the mission's lasting impact, and quick links to
  * NASA's authoritative source + (when applicable) the planet's
- * encyclopedia entry — so the page reads like a museum placard rather
+ * encyclopedia entry - so the page reads like a museum placard rather
  * than a Wikipedia stub.
  */
 
@@ -61,7 +61,7 @@ export function HistoricMissionsPage() {
     fetchHistoricMissions()
       .then((m) => {
         if (!cancelled) {
-          // Sort by launch date ascending — chronological reads better in a timeline.
+          // Sort by launch date ascending - chronological reads better in a timeline.
           const sorted = [...m].sort((a, b) => a.launchDate.localeCompare(b.launchDate));
           setMissions(sorted);
         }

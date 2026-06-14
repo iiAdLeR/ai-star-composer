@@ -24,12 +24,12 @@ const STYLE_OPTIONS = ["calm", "pop", "study", "cinematic", "drone"] as const;
 const DEFAULT_SEEDS = [7, 13, 19];
 
 function fmtNumber(v: number | null | undefined, digits = 3): string {
-  if (v == null || !Number.isFinite(v)) return "—";
+  if (v == null || !Number.isFinite(v)) return " - ";
   return v.toFixed(digits);
 }
 
 function fmtP(v: number | null | undefined): string {
-  if (v == null || !Number.isFinite(v)) return "—";
+  if (v == null || !Number.isFinite(v)) return " - ";
   if (v < 0.0001) return "< 0.0001";
   return v.toFixed(4);
 }
@@ -39,7 +39,7 @@ function isSignificant(r: EvaluationMetricReport, alpha = 0.05): boolean {
 }
 
 function effectMagnitude(d: number | null | undefined): string {
-  if (d == null) return "—";
+  if (d == null) return " - ";
   const a = Math.abs(d);
   if (a < 0.2) return "tiny";
   if (a < 0.5) return "small";
@@ -411,19 +411,19 @@ export function QualityPage() {
             </summary>
             <ul className="mt-2 space-y-1 text-[11px] leading-relaxed text-white/55">
               <li>
-                <b className="text-white/80">N</b> — {t("quality.legend.n")}
+                <b className="text-white/80">N</b> - {t("quality.legend.n")}
               </li>
               <li>
-                <b className="text-white/80">p</b> — {t("quality.legend.p")}
+                <b className="text-white/80">p</b> - {t("quality.legend.p")}
               </li>
               <li>
-                <b className="text-white/80">d_z</b> — {t("quality.legend.dz")}
+                <b className="text-white/80">d_z</b> - {t("quality.legend.dz")}
               </li>
               <li>
-                <b className="text-white/80">Δ</b> — {t("quality.legend.delta")}
+                <b className="text-white/80">Δ</b> - {t("quality.legend.delta")}
               </li>
               <li>
-                <b className="text-emerald-300">AI &gt; BL *</b> / <b className="text-rose-300">BL &gt; AI *</b> —{" "}
+                <b className="text-emerald-300">AI &gt; BL *</b> / <b className="text-rose-300">BL &gt; AI *</b>  - {" "}
                 {t("quality.legend.direction")}
               </li>
             </ul>

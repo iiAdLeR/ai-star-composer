@@ -36,7 +36,7 @@ export function parseIntervalMsParam(v: string | null, fallback: number): number
   return Math.max(50, Math.min(2000, Math.round(n)));
 }
 
-/** Query: use_lstm / lstm — 1, true, yes → on. */
+/** Query: use_lstm / lstm - 1, true, yes → on. */
 export function parseUseLstmParam(v: string | null, fallback: boolean): boolean {
   if (v == null || v === "") return fallback;
   const s = v.toLowerCase();

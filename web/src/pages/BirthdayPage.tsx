@@ -21,7 +21,7 @@ import {
 import { getPlanetTheme } from "@/lib/planetTheme";
 
 /**
- * /birthday — give someone a song their planet has been singing since
+ * /birthday - give someone a song their planet has been singing since
  * they were born.
  *
  * The form is intentionally compact: only "recipient name + birth date
@@ -67,7 +67,7 @@ export function BirthdayPage() {
   const canSubmit = recipientName.trim().length > 0 && birthDate.length === 10 && !submitting;
 
   // Fetch the rich style catalog from the API. We don't block the form on
-  // it — the picker degrades to plain id labels until it arrives.
+  // it - the picker degrades to plain id labels until it arrives.
   useEffect(() => {
     let cancelled = false;
     fetchBirthdayStyles()

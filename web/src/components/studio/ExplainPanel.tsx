@@ -106,7 +106,7 @@ export function ExplainPanel({ explanation, className, initialCollapsed = false 
             />
             <FactCell
               label={t("explain.fact.bpm")}
-              value={explanation.style_influence.bpm ? `${explanation.style_influence.bpm}` : "—"}
+              value={explanation.style_influence.bpm ? `${explanation.style_influence.bpm}` : " - "}
               theme={theme}
             />
             <FactCell

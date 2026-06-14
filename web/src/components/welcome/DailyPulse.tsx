@@ -6,7 +6,7 @@ import { type PlanetFacts, PLANETS, fetchPlanetFacts } from "@/lib/api";
 import { getPlanetTheme, planetCssVars } from "@/lib/planetTheme";
 
 /**
- * "Daily NASA Pulse" — a planet-of-the-day card on the Welcome page.
+ * "Daily NASA Pulse" - a planet-of-the-day card on the Welcome page.
  *
  * Picks one of the 8 planets deterministically by UTC day, fetches its
  * physics + a single fun fact from the encyclopedia, and offers two
@@ -49,7 +49,7 @@ export function DailyPulse({ className }: { className?: string }) {
   const theme = useMemo(() => getPlanetTheme(planet), [planet]);
   const cssVars = useMemo(() => planetCssVars(theme), [theme]);
 
-  if (error) return null; // Silent failure — the rest of the page is still useful.
+  if (error) return null; // Silent failure - the rest of the page is still useful.
 
   // Pick a fun fact deterministically from the day index so it varies per day.
   const facts = (isTr && data?.fun_facts_tr?.length ? data.fun_facts_tr : data?.fun_facts) ?? [];

@@ -15,12 +15,12 @@
     "unmute": "Unmute UI sound"
   },
   "offline": {
-    "banner": "You are offline — showing cached data only. Reconnect to generate fresh results.",
+    "banner": "You are offline - showing cached data only. Reconnect to generate fresh results.",
     "restored": "Back online."
   },
   "welcome": {
     "headline": "Listen to the planets",
-    "sub": "Choose a world, pull live ephemeris data, and hear it as melody, harmony, and rhythm — baseline physics or AI-scored transitions.",
+    "sub": "Choose a world, pull live ephemeris data, and hear it as melody, harmony, and rhythm - baseline physics or AI-scored transitions.",
     "ctaEnter": "Enter studio",
     "ctaDemo": "Watch demo",
     "ctaEncyclopedia": "Explore encyclopedia",
@@ -130,7 +130,7 @@
       "ducking": "Ducking on NASA background",
       "duckStrength": "Ducking strength",
       "nasaBg": "NASA background mix",
-      "nasaBgNone": "— None (instrument only) —",
+      "nasaBgNone": " -  None (instrument only)  - ",
       "nasaBgHint": "Place .wav files in assets/backgrounds/ on the server.",
       "useLstm": "Blend trained LSTM into AI melody",
       "useLstmDisabled": "no checkpoint on server",
@@ -188,7 +188,7 @@
     },
     "live": {
       "title": "Live stream",
-      "subtitle": "WebSocket note events with Web Audio playback — the same engine that powers the Studio Demo tour.",
+      "subtitle": "WebSocket note events with Web Audio playback - the same engine that powers the Studio Demo tour.",
       "controls": "Stream settings",
       "interval": "Interval between notes (ms)",
       "volume": "Preview volume",
@@ -211,9 +211,9 @@
       "logTitle": "Session log",
       "logEmpty": "No messages yet.",
       "events": "events",
-      "audioHint": "Tip: if you hear silence, click Start again — browsers require a user gesture to unlock AudioContext.",
+      "audioHint": "Tip: if you hear silence, click Start again - browsers require a user gesture to unlock AudioContext.",
       "audioBlocked": "Could not start audio (browser blocked or unavailable).",
-      "socketError": "WebSocket error — is uvicorn running on port 8000?",
+      "socketError": "WebSocket error - is uvicorn running on port 8000?",
       "stoppedByUser": "Stopped by user.",
       "donePlanet": "Finished streaming for {{planet}}.",
       "logBadJson": "Received non-JSON message.",
@@ -243,11 +243,11 @@
     "loading": "Loading latest report…",
     "noReport": "No persisted report yet. Configure a small grid above and hit Run, or generate one offline with scripts/evaluate_baseline_vs_ai.py.",
     "reportConfig": "Grid: {{planets}} × {{styles}} × seeds {{seeds}} · days={{days}} · α={{alpha}}",
-    "reportPersisted": "Persisted report (rendered offline) — {{when}}",
+    "reportPersisted": "Persisted report (rendered offline) - {{when}}",
     "legend": "Legend",
     "legend.n": "matched pairs in the test",
     "legend.p": "Wilcoxon signed-rank p-value (two-sided)",
-    "legend.dz": "Cohen's d_z — standardized matched-pair effect size",
+    "legend.dz": "Cohen's d_z - standardized matched-pair effect size",
     "legend.delta": "mean (AI) − mean (baseline) on the metric",
     "legend.direction": "shown only when p < α (significant difference)",
     "chip.pairs": "Pairs",
@@ -258,7 +258,7 @@
     "col.baseline": "Baseline (μ ± σ)",
     "col.ai": "AI (μ ± σ)",
     "col.direction": "Direction",
-    "toastDone": "Evaluation complete — {{n}} pairs.",
+    "toastDone": "Evaluation complete - {{n}} pairs.",
     "toastFail": "Evaluation failed: {{message}}",
     "toastTooLarge": "Grid is too large ({{n}} pairs). Reduce to ≤ 12.",
     "toastEmpty": "Pick at least one planet, one style and one seed."
@@ -328,14 +328,14 @@
     "tabsAria": "Kepler law selector",
     "law1.tab": "1. Ellipses",
     "law1.title": "First law: orbits are ellipses",
-    "law1.lead": "Every planet's orbit is an ellipse with the Sun at one focus — not a perfect circle.",
+    "law1.lead": "Every planet's orbit is an ellipse with the Sun at one focus - not a perfect circle.",
     "law1.body1": "The shape is described by the ",
     "law1.term.e": "eccentricity",
     "law1.body2": " e: 0 is a circle, 1 is an escape trajectory. Drag the slider to deform the orbit while keeping the semi-major axis fixed at 1 AU.",
     "law1.eLabel": "Eccentricity (e)",
     "law1.bullet1": "Perihelion = a × (1 − e) = {{v}} AU",
     "law1.bullet2": "Aphelion = a × (1 + e) = {{v}} AU",
-    "law1.bullet3": "The Sun always sits at one focus — never at the geometric center (unless e = 0).",
+    "law1.bullet3": "The Sun always sits at one focus - never at the geometric center (unless e = 0).",
     "law1.caption": "Yellow dot = the Sun at one focus. The dashed circle is the orbit you would have with the same a but e = 0.",
     "law2.tab": "2. Equal areas",
     "law2.title": "Second law: equal areas in equal times",
@@ -344,7 +344,7 @@
     "law2.term.peri": "perihelion",
     "law2.body2": " and slower near ",
     "law2.term.ap": "aphelion",
-    "law2.body3": " — exactly the asymmetry you hear in the comet-like presets of the orbital lab.",
+    "law2.body3": " - exactly the asymmetry you hear in the comet-like presets of the orbital lab.",
     "law2.eLabel": "Eccentricity (e)",
     "law2.wedgesLabel": "Equal-time wedges",
     "law2.ratio": "Max speed is {{ratio}}× the min speed for this orbit.",
@@ -352,12 +352,12 @@
     "law3.tab": "3. T² ∝ a³",
     "law3.title": "Third law: period vs distance",
     "law3.lead": "T² (period in years) divided by a³ (semi-major axis in AU) is the same constant for every body orbiting the Sun.",
-    "law3.body": "Slide the two semi-major axes below. Watch the ratio in the rightmost column stay essentially constant — that is the ",
+    "law3.body": "Slide the two semi-major axes below. Watch the ratio in the rightmost column stay essentially constant - that is the ",
     "law3.term": "third law",
-    "law3.a1Label": "Object A — semi-major axis",
-    "law3.a2Label": "Object B — semi-major axis",
+    "law3.a1Label": "Object A - semi-major axis",
+    "law3.a2Label": "Object B - semi-major axis",
     "law3.colObj": "Body",
-    "law3.takeaway": "If a doubles, T grows by 2^1.5 ≈ 2.83 — so Mars's year (a ≈ 1.5) is almost 1.9 Earth years.",
+    "law3.takeaway": "If a doubles, T grows by 2^1.5 ≈ 2.83 - so Mars's year (a ≈ 1.5) is almost 1.9 Earth years.",
     "law3.caption": "Cyan = Object A. Pink = Object B. Both orbits are nearly circular for clarity."
   },
   "missions": {
@@ -386,8 +386,8 @@
     "running": "Comparing…",
     "playBoth": "▶ Play both simultaneously",
     "physicsTitle": "Physical properties from NASA",
-    "physicsHint": "These are the constants the sonification engine reads — orbital period, eccentricity, gravity — for each planet.",
-    "metricsTitle": "Sonification metrics — what changed?",
+    "physicsHint": "These are the constants the sonification engine reads - orbital period, eccentricity, gravity - for each planet.",
+    "metricsTitle": "Sonification metrics - what changed?",
     "metricsHint": "Computed on the generated MIDI events. Larger absolute Δ% means the music is more different between the two planets.",
     "toastDone": "Generated A = {{a}} vs B = {{b}}",
     "toastFail": "Compare failed: {{message}}",
@@ -406,7 +406,7 @@
     "openStudio": "Open studio",
     "heroKicker": "Solar System reference",
     "heroTitle": "Eight worlds, one symphony",
-    "heroSubtitle": "Curated NASA-sourced data, mission history, and the musical signature of each planet — written for classrooms, museums and curious minds.",
+    "heroSubtitle": "Curated NASA-sourced data, mission history, and the musical signature of each planet - written for classrooms, museums and curious minds.",
     "search": "Search the encyclopedia",
     "searchPlaceholder": "Search planets, missions, facts…",
     "noMatch": "No planet matches that search.",
@@ -428,7 +428,7 @@
     "section.atmosphere": "Atmosphere",
     "section.physics": "Physical properties",
     "section.missions": "Spacecraft missions",
-    "section.sound": "How it sounds — and why",
+    "section.sound": "How it sounds - and why",
     "section.facts": "Did you know?",
     "section.citations": "Citations",
     "noMissions": "No flagship spacecraft has visited this world yet.",
@@ -465,7 +465,7 @@
     "title": "Demo mode",
     "subtitle": "A guided 3-planet tour for the jury. Press Start, sit back, listen.",
     "controlsTitle": "Curated walkthrough",
-    "controlsHint": "Earth · Mars · Jupiter — fixed seed 42 for reproducibility, 30-day Horizons window each.",
+    "controlsHint": "Earth · Mars · Jupiter - fixed seed 42 for reproducibility, 30-day Horizons window each.",
     "autoPlay": "Auto-play",
     "start": "Start demo",
     "running": "Running…",
@@ -502,7 +502,7 @@
   "birthday": {
     "badge": "Cosmic Birthday Gift",
     "title": "Give a song your planet has been singing since you were born",
-    "subtitle": "Pick a planet and a birth date — we pull real NASA Horizons ephemeris from that day to today, and turn it into a personalized symphony.",
+    "subtitle": "Pick a planet and a birth date - we pull real NASA Horizons ephemeris from that day to today, and turn it into a personalized symphony.",
     "pageBreadcrumb": "Birthday gift",
     "form": {
       "recipient": "Who is this gift for?",
@@ -515,27 +515,27 @@
       "sender": "Your name (optional)",
       "senderPlaceholder": "e.g. From Sam",
       "message": "A short message (optional)",
-      "messagePlaceholder": "Happy birthday — listen to how your planet has been singing since you arrived.",
+      "messagePlaceholder": "Happy birthday - listen to how your planet has been singing since you arrived.",
       "generate": "Compose the gift",
       "generating": "Asking NASA…",
-      "privacyNote": "Gifts are stored on this server and reachable through a 24-character token. No account, no email — share the link only with the recipient."
+      "privacyNote": "Gifts are stored on this server and reachable through a 24-character token. No account, no email - share the link only with the recipient."
     },
     "styleCards": {
       "celebration": {
         "label": "Celebration",
-        "description": "Bright, festive, danceable. Major hexatonic with a steady backbeat — the default party feel."
+        "description": "Bright, festive, danceable. Major hexatonic with a steady backbeat - the default party feel."
       },
       "tender": {
         "label": "Tender dedication",
-        "description": "Slow, intimate, warm. Major-7 piano over a warm pad — for close family, partners, or anyone who deserves a hug in audio form."
+        "description": "Slow, intimate, warm. Major-7 piano over a warm pad - for close family, partners, or anyone who deserves a hug in audio form."
       },
       "anthem": {
         "label": "Cosmic anthem",
-        "description": "Heroic, soaring, life-montage. Lydian #4 over horns, cello, and strings — for milestone birthdays."
+        "description": "Heroic, soaring, life-montage. Lydian #4 over horns, cello, and strings - for milestone birthdays."
       },
       "waltz": {
         "label": "Starlit waltz",
-        "description": "Elegant, ballroom-flavored. Harpsichord and pizzicato over G major — feels like a classical dedication."
+        "description": "Elegant, ballroom-flavored. Harpsichord and pizzicato over G major - feels like a classical dedication."
       },
       "nebula": {
         "label": "Nebula drift",
@@ -562,10 +562,10 @@
     },
     "card": {
       "kicker": "Cosmic Birthday Gift",
-      "title": "Happy birthday, {{name}} — your {{planet}} song",
+      "title": "Happy birthday, {{name}} - your {{planet}} song",
       "subtitle": "Built from real NASA Horizons data, from {{date}} until today, for {{planet}}.",
       "audioHint": "Style: {{style}} · {{bpm}} BPM",
-      "audioUnavailable": "Audio is not ready yet — try regenerating in a moment.",
+      "audioUnavailable": "Audio is not ready yet - try regenerating in a moment.",
       "shareCopy": "Copy share link",
       "downloadWav": "Download WAV",
       "downloadMidi": "Download MIDI",
@@ -574,7 +574,7 @@
       "srPaused": "Cosmic song is paused.",
       "badgeHq": "Studio quality · FluidSynth",
       "badgeLstm": "AI-blended melody (LSTM)",
-      "fluidFallback": "Playing the fallback synth — install a SoundFont (assets/soundfonts/) for studio-grade audio."
+      "fluidFallback": "Playing the fallback synth - install a SoundFont (assets/soundfonts/) for studio-grade audio."
     },
     "facts": {
       "ageInPlanetYears": "Age in {{planet}} years",
@@ -590,7 +590,7 @@
       "created": "Cosmic gift composed for {{name}}.",
       "failed": "Could not compose the gift: {{message}}",
       "shareCopied": "Share link copied to clipboard.",
-      "shareFailed": "Clipboard blocked — copy the URL from the address bar."
+      "shareFailed": "Clipboard blocked - copy the URL from the address bar."
     },
     "gift": {
       "breadcrumb": "Someone made you a song",

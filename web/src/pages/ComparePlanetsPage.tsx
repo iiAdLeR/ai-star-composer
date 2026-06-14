@@ -89,7 +89,7 @@ export function ComparePlanetsPage() {
     }
   }, [days, mode, planetA, planetB, seed, style, t, toast]);
 
-  // Play both simultaneously — a single button that gets/syncs the two audio elements.
+  // Play both simultaneously - a single button that gets/syncs the two audio elements.
   const playBoth = useCallback(() => {
     if (!audioA || !audioB) return;
     audioA.currentTime = 0;
@@ -333,7 +333,7 @@ function DeltaTable({
   bLabel: string;
 }) {
   const fmt = (n: number, digits = 4) => {
-    if (!Number.isFinite(n)) return "—";
+    if (!Number.isFinite(n)) return " - ";
     if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(digits)}×10⁶`;
     return n.toLocaleString(undefined, { maximumFractionDigits: digits });
   };
@@ -365,7 +365,7 @@ function DeltaTable({
                 <td className="py-1.5 text-right text-white/65">
                   {r.rel !== null && Number.isFinite(r.rel)
                     ? `${(r.rel * 100).toFixed(1)}%`
-                    : "—"}
+                    : " - "}
                 </td>
               </tr>
             );

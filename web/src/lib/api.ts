@@ -30,7 +30,7 @@ export type HealthResponse = {
   fluidsynth_on_path?: boolean;
   soundfont_configured?: boolean;
   lstm_checkpoint_ready?: boolean;
-  // Detailed (?detailed=true) only — for local diagnostics
+  // Detailed (?detailed=true) only - for local diagnostics
   fluidsynth_resolved?: string | null;
   fluidsynth_bin_setting?: string;
   data_dir?: string;
@@ -266,7 +266,7 @@ export interface HistoricMission {
   splashdown?: string;
 }
 
-// Historic missions are an editorial, citation-backed list — fully static,
+// Historic missions are an editorial, citation-backed list - fully static,
 // no NASA call needed. Ship it inside the bundle so the timeline never
 // shows a skeleton because the API is busy.
 import bundledMissions from "@/data/historic_missions.json";
@@ -355,7 +355,7 @@ export interface EncyclopediaCatalog {
 }
 
 // Encyclopedia content is fully static (no NASA dependency), so we ship the
-// canonical JSON inside the bundle. The frontend then renders instantly —
+// canonical JSON inside the bundle. The frontend then renders instantly  - 
 // even if the backend is unreachable or busy generating audio. The backend
 // endpoints still exist for external API consumers.
 import bundledPlanetFacts from "@/data/planet_facts.json";
@@ -643,7 +643,7 @@ export async function postCompare(body: GeneratePayload): Promise<CompareRespons
 
 // --- Birthday gifts ------------------------------------------------------
 
-/** Dedicated gift styles exposed by `/birthday/styles` — distinct from the
+/** Dedicated gift styles exposed by `/birthday/styles` - distinct from the
  * Studio data-sonification presets. */
 export const BIRTHDAY_STYLE_IDS = [
   "celebration",

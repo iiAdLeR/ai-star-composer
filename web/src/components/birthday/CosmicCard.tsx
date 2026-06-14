@@ -70,7 +70,7 @@ export function CosmicCard({ gift, autoplay = false, compact = false }: CosmicCa
   useEffect(() => {
     if (!autoplay || !audioRef.current || !audioUrl) return undefined;
     // Modern browsers block autoplay unless the user has interacted with
-    // the page. We try once and silently swallow the rejection — the
+    // the page. We try once and silently swallow the rejection - the
     // visible play button will work on click.
     const el = audioRef.current;
     el.play()
@@ -173,7 +173,7 @@ export function CosmicCard({ gift, autoplay = false, compact = false }: CosmicCa
           “{gift.message}”
           {gift.sender_name ? (
             <footer className="mt-2 text-xs not-italic opacity-70">
-              — {gift.sender_name}
+              - {gift.sender_name}
             </footer>
           ) : null}
         </blockquote>
@@ -235,7 +235,7 @@ export function CosmicCard({ gift, autoplay = false, compact = false }: CosmicCa
             <p className="mt-2 text-xs opacity-60">
               {t("birthday.card.audioHint", {
                 style: t(`birthday.styleCards.${gift.style}.label`, gift.style),
-                bpm: gift.bpm ?? "—",
+                bpm: gift.bpm ?? " - ",
               })}
             </p>
             <div className="mt-2 flex flex-wrap gap-2 text-[11px]">

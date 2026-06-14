@@ -264,7 +264,7 @@ export function StudioLivePage() {
           <p className="mt-3 rounded-xl border border-cyan-500/25 bg-cyan-500/[0.07] px-3 py-2.5 text-xs leading-relaxed text-cyan-100/85">
             <span className="text-white/50">{t("studio.form.planet")}: </span>
             <span className="font-semibold text-white">{planet}</span>
-            <span className="text-white/40"> — </span>
+            <span className="text-white/40"> - </span>
             <span className="text-white/55">Same 3D target as Generate; change it in the big view.</span>
           </p>
 
@@ -422,7 +422,7 @@ export function StudioLivePage() {
               <div className="mb-1 flex justify-between text-xs text-white/45">
                 <span>{t("studio.live.progress")}</span>
                 <span>
-                  {progress.total > 0 ? `${progress.current} / ${progress.total} (${pct}%)` : "—"}
+                  {progress.total > 0 ? `${progress.current} / ${progress.total} (${pct}%)` : " - "}
                 </span>
               </div>
               <div className="h-2.5 w-full overflow-hidden rounded-full bg-white/10">
@@ -449,7 +449,7 @@ export function StudioLivePage() {
                 ].map(([k, v]) => (
                   <div key={k} className="rounded-lg border border-white/10 bg-black/20 px-2 py-1.5">
                     <dt className="font-mono text-[10px] uppercase text-white/40">{k}</dt>
-                    <dd className="font-mono text-cyan-200/90">{v != null ? String(v) : "—"}</dd>
+                    <dd className="font-mono text-cyan-200/90">{v != null ? String(v) : " - "}</dd>
                   </div>
                 ))}
               </dl>

@@ -67,7 +67,7 @@ function MetricsTable({ metrics }: { metrics: Record<string, number> }) {
   const entries = Object.entries(metrics);
   if (entries.length === 0) return null;
   // auto-fill + minmax means the grid is driven by the *container* width, not
-  // the viewport — important because this table lives inside a narrow Studio
+  // the viewport - important because this table lives inside a narrow Studio
   // sidebar (~460px on desktop), where `sm:grid-cols-2` would otherwise force
   // two columns that are too cramped for the long metric names.
   //
@@ -520,7 +520,7 @@ export function StudioPage() {
             <>
               <p className="mt-3 font-mono text-[11px] leading-relaxed text-white/38">
                 {t("studio.capabilities.healthLineShort", {
-                  version: health.api_version ?? "—",
+                  version: health.api_version ?? " - ",
                   fs: health.fluidsynth_on_path ? t("studio.capabilities.pathYes") : t("studio.capabilities.pathNo"),
                 })}
               </p>
@@ -559,7 +559,7 @@ export function StudioPage() {
               <span className="font-semibold" style={{ color: planetTheme.text }}>
                 {planet}
               </span>
-              <span className="text-white/40"> — </span>
+              <span className="text-white/40"> - </span>
               <span className="text-white/55">{t("studio.form.planetHint")}</span>
             </p>
 

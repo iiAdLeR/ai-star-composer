@@ -4,7 +4,7 @@
  * Each entry has an id (kebab-case, used by `GlossaryTerm` to look up tooltips),
  * an English + Turkish definition, a category and optional `see_also` links.
  *
- * Keep this list curated — it is meant to be 100% trustworthy for a classroom,
+ * Keep this list curated - it is meant to be 100% trustworthy for a classroom,
  * not a Wikipedia dump.
  */
 
@@ -48,7 +48,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Eccentricity",
     term_tr: "Eksantriklik",
     category: "astronomy",
-    short: "How elongated an orbit is — 0 means a perfect circle.",
+    short: "How elongated an orbit is - 0 means a perfect circle.",
     short_tr: "Bir yörüngenin ne kadar uzatılmış olduğunun ölçüsü; 0 mükemmel çember demektir.",
     full:
       "Values between 0 and 1 describe ellipses; equal to 1 the orbit is parabolic (escape); above 1 it is hyperbolic. Mercury has the highest eccentricity (0.21) of the eight planets.",
@@ -81,8 +81,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Semi-major axis",
     term_tr: "Yarı büyük eksen",
     category: "astronomy",
-    short: "Half the longest diameter of an ellipse — the average orbital radius.",
-    short_tr: "Bir elipsin en uzun çapının yarısı — ortalama yörünge yarıçapı.",
+    short: "Half the longest diameter of an ellipse - the average orbital radius.",
+    short_tr: "Bir elipsin en uzun çapının yarısı - ortalama yörünge yarıçapı.",
     see_also: ["orbital-period"],
   },
   "axial-tilt": {
@@ -93,17 +93,17 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short: "The angle between a planet's rotation axis and its orbital plane.",
     short_tr: "Bir gezegenin dönüş ekseni ile yörünge düzlemi arasındaki açı.",
     full:
-      "Earth's 23.4° tilt drives the seasons. Uranus is tipped almost 98° — it rolls along its orbit rather than spinning upright.",
+      "Earth's 23.4° tilt drives the seasons. Uranus is tipped almost 98° - it rolls along its orbit rather than spinning upright.",
     full_tr:
-      "Dünya'nın 23.4°'lik eğimi mevsimleri yaratır. Uranüs neredeyse 98° eğilmiştir — yörüngesinde yuvarlanır.",
+      "Dünya'nın 23.4°'lik eğimi mevsimleri yaratır. Uranüs neredeyse 98° eğilmiştir - yörüngesinde yuvarlanır.",
   },
   "retrograde": {
     id: "retrograde",
     term: "Retrograde rotation",
     term_tr: "Retrograd dönüş",
     category: "astronomy",
-    short: "Rotating in the opposite direction to most planets — Venus and Uranus do this.",
-    short_tr: "Çoğu gezegenin tersi yönünde dönmek — Venüs ve Uranüs böyle döner.",
+    short: "Rotating in the opposite direction to most planets - Venus and Uranus do this.",
+    short_tr: "Çoğu gezegenin tersi yönünde dönmek - Venüs ve Uranüs böyle döner.",
   },
   "au": {
     id: "au",
@@ -121,9 +121,9 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short: "A table of the positions and velocities of celestial bodies over time.",
     short_tr: "Gök cisimlerinin zaman içindeki konum ve hızlarının tablosu.",
     full:
-      "NASA's JPL Horizons service provides high-precision ephemerides for every known major and minor body in the solar system — the data source behind every note in this project.",
+      "NASA's JPL Horizons service provides high-precision ephemerides for every known major and minor body in the solar system - the data source behind every note in this project.",
     full_tr:
-      "NASA JPL Horizons servisi, Güneş Sistemi'ndeki tüm büyük ve küçük cisimler için yüksek hassasiyetli efemerisler sağlar — bu projedeki her notanın veri kaynağı.",
+      "NASA JPL Horizons servisi, Güneş Sistemi'ndeki tüm büyük ve küçük cisimler için yüksek hassasiyetli efemerisler sağlar - bu projedeki her notanın veri kaynağı.",
     see_also: ["horizons"],
   },
   "horizons": {
@@ -160,7 +160,7 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short: "The change in velocity needed for a spacecraft maneuver.",
     short_tr: "Bir uzay aracı manevrası için gereken hız değişimi.",
     full:
-      "Measured in km/s. Hohmann transfer orbits minimise Δv between two coplanar circular orbits — the canonical 'cheap' interplanetary trajectory.",
+      "Measured in km/s. Hohmann transfer orbits minimise Δv between two coplanar circular orbits - the canonical 'cheap' interplanetary trajectory.",
   },
   "hohmann-transfer": {
     id: "hohmann-transfer",
@@ -210,8 +210,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Velocity (MIDI)",
     term_tr: "Hız (MIDI)",
     category: "music",
-    short: "How forcefully a note is played — controls loudness and often timbre.",
-    short_tr: "Bir notanın ne kadar güçlü çalındığı — ses seviyesini ve genellikle tınıyı kontrol eder.",
+    short: "How forcefully a note is played - controls loudness and often timbre.",
+    short_tr: "Bir notanın ne kadar güçlü çalındığı - ses seviyesini ve genellikle tınıyı kontrol eder.",
     see_also: ["midi"],
   },
   "bpm": {
@@ -265,8 +265,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Octave",
     term_tr: "Oktav",
     category: "music",
-    short: "A distance of 12 semitones — the same note name, doubled in frequency.",
-    short_tr: "12 yarı tonluk bir aralık — aynı nota adı, frekans iki katına çıkar.",
+    short: "A distance of 12 semitones - the same note name, doubled in frequency.",
+    short_tr: "12 yarı tonluk bir aralık - aynı nota adı, frekans iki katına çıkar.",
   },
   // --- AI / ML ------------------------------------------------------------
   "lstm": {
@@ -274,8 +274,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "LSTM (Long Short-Term Memory)",
     term_tr: "LSTM (Uzun Kısa Süreli Bellek)",
     category: "ai",
-    short: "A neural network for sequences — remembers past notes when predicting the next one.",
-    short_tr: "Diziler için sinir ağı — bir sonrakini tahmin ederken geçmiş notaları hatırlar.",
+    short: "A neural network for sequences - remembers past notes when predicting the next one.",
+    short_tr: "Diziler için sinir ağı - bir sonrakini tahmin ederken geçmiş notaları hatırlar.",
     full:
       "A type of recurrent neural network introduced by Hochreiter & Schmidhuber in 1997. Excellent for melodies because they have long-range musical dependencies.",
     full_tr:
@@ -286,8 +286,8 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     term: "Sampling temperature",
     term_tr: "Örnekleme sıcaklığı",
     category: "ai",
-    short: "Controls how predictable the AI is — low = repetitive, high = chaotic.",
-    short_tr: "AI'nın ne kadar öngörülebilir olduğunu kontrol eder — düşük = tekrarlayan, yüksek = kaotik.",
+    short: "Controls how predictable the AI is - low = repetitive, high = chaotic.",
+    short_tr: "AI'nın ne kadar öngörülebilir olduğunu kontrol eder - düşük = tekrarlayan, yüksek = kaotik.",
     full:
       "Mathematically, it scales the logits before softmax. Below 1 sharpens the distribution; above 1 flattens it. Our default 0.92 keeps choices musical without freezing into loops.",
     full_tr:
@@ -302,21 +302,21 @@ export const GLOSSARY: Record<string, GlossaryEntry> = {
     short: "A non-parametric statistical test comparing paired samples.",
     short_tr: "Eşli örnekleri karşılaştıran parametrik olmayan istatistiksel test.",
     full:
-      "Used in our Quality Dashboard to compare AI vs baseline on identical seeds. Robust to non-Gaussian distributions — important because musical metrics rarely follow a normal distribution.",
+      "Used in our Quality Dashboard to compare AI vs baseline on identical seeds. Robust to non-Gaussian distributions - important because musical metrics rarely follow a normal distribution.",
     full_tr:
-      "AI'yı temele aynı tohumlarda karşılaştırmak için Kalite Panomuzda kullanılır. Gauss olmayan dağılımlara karşı dayanıklıdır — müzikal ölçütler nadiren normal dağılım gösterdiği için önemlidir.",
+      "AI'yı temele aynı tohumlarda karşılaştırmak için Kalite Panomuzda kullanılır. Gauss olmayan dağılımlara karşı dayanıklıdır - müzikal ölçütler nadiren normal dağılım gösterdiği için önemlidir.",
   },
   "shannon-entropy": {
     id: "shannon-entropy",
     term: "Shannon entropy",
     term_tr: "Shannon entropisi",
     category: "ai",
-    short: "Measures how varied a sequence is — higher entropy = more diversity.",
-    short_tr: "Bir dizinin ne kadar çeşitli olduğunu ölçer — daha yüksek entropi = daha fazla çeşitlilik.",
+    short: "Measures how varied a sequence is - higher entropy = more diversity.",
+    short_tr: "Bir dizinin ne kadar çeşitli olduğunu ölçer - daha yüksek entropi = daha fazla çeşitlilik.",
     full:
-      "Introduced by Claude Shannon in 1948 for information theory. In our context, pitch entropy tells us how 'rich' a melody's note palette is — useful for distinguishing repetitive baselines from varied AI compositions.",
+      "Introduced by Claude Shannon in 1948 for information theory. In our context, pitch entropy tells us how 'rich' a melody's note palette is - useful for distinguishing repetitive baselines from varied AI compositions.",
     full_tr:
-      "Claude Shannon tarafından 1948'de bilgi teorisi için tanıtıldı. Bizim bağlamımızda perde entropisi, bir melodinin nota paletinin ne kadar 'zengin' olduğunu söyler — tekrarlayan temelleri çeşitli AI bestelerinden ayırt etmek için kullanışlıdır.",
+      "Claude Shannon tarafından 1948'de bilgi teorisi için tanıtıldı. Bizim bağlamımızda perde entropisi, bir melodinin nota paletinin ne kadar 'zengin' olduğunu söyler - tekrarlayan temelleri çeşitli AI bestelerinden ayırt etmek için kullanışlıdır.",
     see_also: ["wilcoxon"],
   },
   "effect-size": {

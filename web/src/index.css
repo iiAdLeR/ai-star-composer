@@ -99,7 +99,7 @@ body {
   animation: glow-pulse 6s ease-in-out infinite;
 }
 
-/* —— Welcome entrance: “warp” + hero —— */
+/* - Welcome entrance: “warp” + hero - */
 @keyframes starfield-warp-enter {
   0% {
     transform: scale(1.22);
@@ -296,7 +296,7 @@ body {
     0 0 80px rgba(34, 211, 238, 0.12);
 }
 
-/* —— Route transitions: fade + subtle rise on every page mount —— */
+/* - Route transitions: fade + subtle rise on every page mount - */
 @keyframes route-fade-rise {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -306,7 +306,7 @@ body {
   animation: route-fade-rise 240ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* —— Shimmer skeleton: replaces the "fake progress" pulse with a sweep —— */
+/* - Shimmer skeleton: replaces the "fake progress" pulse with a sweep - */
 @keyframes shimmer-sweep {
   0%   { background-position: 200% 0; }
   100% { background-position: -200% 0; }
@@ -323,7 +323,7 @@ body {
   animation: shimmer-sweep 1.6s ease-in-out infinite;
 }
 
-/* —— Toast entrance: spring-ish rise + scale —— */
+/* - Toast entrance: spring-ish rise + scale - */
 @keyframes toast-rise {
   from { opacity: 0; transform: translateY(14px) scale(0.96); }
   to   { opacity: 1; transform: translateY(0)    scale(1); }
@@ -333,7 +333,7 @@ body {
   animation: toast-rise 280ms cubic-bezier(0.32, 0.72, 0, 1) both;
 }
 
-/* —— Boot splash: branded first-paint —— */
+/* - Boot splash: branded first-paint - */
 .boot-splash-root {
   position: fixed;
   inset: 0;

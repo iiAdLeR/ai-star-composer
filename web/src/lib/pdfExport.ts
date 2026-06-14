@@ -3,7 +3,7 @@
  *
  * Uses jsPDF (pure-JS, no native deps) to produce a multi-page,
  * classroom-friendly worksheet from a PlanetFacts object. No backend
- * call, no accounts — runs entirely in the browser.
+ * call, no accounts - runs entirely in the browser.
  *
  * Layout is deliberately minimalist (no embedded images) so the file
  * stays small (~30 KB) and looks correct in B&W print.
@@ -190,7 +190,7 @@ export function exportPlanetPdf(planet: PlanetFacts, opts: Options = {}): void {
   if (planet.citations?.length) {
     sectionHeader(doc, c, isTr ? "Kaynaklar" : "Sources", accent);
     for (const cit of planet.citations) {
-      bulletLine(doc, c, `${cit.label} — ${cit.url}`, contentWidth);
+      bulletLine(doc, c, `${cit.label} - ${cit.url}`, contentWidth);
     }
   }
 

@@ -7,7 +7,7 @@ type StarfieldProps = {
   variant?: StarfieldVariant;
 };
 
-/** Lightweight CSS starfield — no WebGL, safe for low-end laptops during defense demos. */
+/** Lightweight CSS starfield - no WebGL, safe for low-end laptops during defense demos. */
 export function Starfield({ variant = "calm" }: StarfieldProps) {
   const stars = useMemo(() => {
     return Array.from({ length: 140 }, (_, i) => ({

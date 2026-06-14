@@ -11,9 +11,9 @@ import { type OrbitPreview, fetchOrbitPreview } from "@/lib/api";
  * Three-lab walkthrough of Kepler's laws.
  *
  * Each tab is a self-contained mini-lesson:
- *   1. Ellipse — vary e, watch the orbit deform.
- *   2. Equal areas — sweep wedges, see speed change.
- *   3. Period vs distance — compare two orbits, watch T² / a³ stay constant.
+ *   1. Ellipse - vary e, watch the orbit deform.
+ *   2. Equal areas - sweep wedges, see speed change.
+ *   3. Period vs distance - compare two orbits, watch T² / a³ stay constant.
  *
  * Designed to be readable in a classroom: every numeric value visible, every
  * slider labeled, every visual matched with a one-line explanation.
@@ -68,7 +68,7 @@ export function KeplerLabPage() {
 }
 
 // ---------------------------------------------------------------------------
-// Law 1 — The Law of Ellipses
+// Law 1 - The Law of Ellipses
 // ---------------------------------------------------------------------------
 function Law1() {
   const { t } = useTranslation();
@@ -76,7 +76,7 @@ function Law1() {
   const [preview, setPreview] = useState<OrbitPreview | null>(null);
 
   useEffect(() => {
-    // Kepler math runs locally now — no debounce needed, slider feels instant.
+    // Kepler math runs locally now - no debounce needed, slider feels instant.
     void fetchOrbitPreview(1.0, e, 240).then(setPreview);
   }, [e]);
 
@@ -116,7 +116,7 @@ function Law1() {
 }
 
 // ---------------------------------------------------------------------------
-// Law 2 — The Law of Equal Areas
+// Law 2 - The Law of Equal Areas
 // ---------------------------------------------------------------------------
 function Law2() {
   const { t } = useTranslation();
@@ -177,7 +177,7 @@ function Law2() {
 }
 
 // ---------------------------------------------------------------------------
-// Law 3 — Period vs. distance
+// Law 3 - Period vs. distance
 // ---------------------------------------------------------------------------
 function Law3() {
   const { t } = useTranslation();

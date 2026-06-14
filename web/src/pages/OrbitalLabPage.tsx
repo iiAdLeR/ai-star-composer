@@ -18,7 +18,7 @@ import {
 import { artifactUrl } from "@/lib/artifacts";
 
 /**
- * Orbital Lab — the "physics playground" page.
+ * Orbital Lab - the "physics playground" page.
  *
  * Two sliders (a, e) drive a live SVG preview + computed period / extrema.
  * Hitting "Sonify" sends the synthetic orbit through the same harmony engine
@@ -72,7 +72,7 @@ export function OrbitalLabPage() {
   }, [a, e, name, setParams]);
 
   // Preview is now computed locally (Kepler math in JS), so update instantly
-  // on every slider move — no debounce, no network round-trip.
+  // on every slider move - no debounce, no network round-trip.
   useEffect(() => {
     let cancelled = false;
     setPreviewLoading(true);
@@ -121,13 +121,13 @@ export function OrbitalLabPage() {
   }, [a, days, e, mode, name, running, seed, style, t, toast, track]);
 
   const periodLabel = useMemo(() => {
-    if (!preview) return "—";
+    if (!preview) return " - ";
     const d = preview.period_days;
     if (d < 365) return `${d.toFixed(1)} d`;
     return `${(d / 365.25).toFixed(2)} yr`;
   }, [preview]);
 
-  // Presets — quick-load famous orbits for fast classroom demos.
+  // Presets - quick-load famous orbits for fast classroom demos.
   const presets: { id: string; label: string; a: number; e: number }[] = [
     { id: "earth", label: t("lab.preset.earth"), a: 1.0, e: 0.017 },
     { id: "mars", label: t("lab.preset.mars"), a: 1.524, e: 0.0934 },
@@ -381,7 +381,7 @@ function SliderRow({
   logScale?: boolean;
 }) {
   // For wide ranges (e.g. 0.1..30 AU), a log scale makes the slider feel
-  // natural — most planets cluster < 5 AU.
+  // natural - most planets cluster < 5 AU.
   const sliderValue = logScale ? Math.log(value) : value;
   const sliderMin = logScale ? Math.log(min) : min;
   const sliderMax = logScale ? Math.log(max) : max;

@@ -15,12 +15,12 @@
     "unmute": "Sesi aç"
   },
   "offline": {
-    "banner": "Çevrimdışısın — yalnızca önbellekli veriler görünüyor. Yeni sonuçlar için bağlan.",
+    "banner": "Çevrimdışısın - yalnızca önbellekli veriler görünüyor. Yeni sonuçlar için bağlan.",
     "restored": "Tekrar çevrimiçisin."
   },
   "welcome": {
     "headline": "Gezegenleri dinle",
-    "sub": "Bir dünya seçin, efemeris verisini çekin ve onu melodi, armoni ve ritim olarak duyun — doğrudan fizik veya yapay zekâ skorlu geçişler.",
+    "sub": "Bir dünya seçin, efemeris verisini çekin ve onu melodi, armoni ve ritim olarak duyun - doğrudan fizik veya yapay zekâ skorlu geçişler.",
     "ctaEnter": "Stüdyoya gir",
     "ctaEncyclopedia": "Ansiklopediyi keşfet",
     "ctaDemo": "Demoyu izle",
@@ -130,7 +130,7 @@
       "ducking": "NASA arka planında ducking",
       "duckStrength": "Ducking gücü",
       "nasaBg": "NASA arka plan miksi",
-      "nasaBgNone": "— Yok (sadece enstrüman) —",
+      "nasaBgNone": " -  Yok (sadece enstrüman)  - ",
       "nasaBgHint": "Sunucudaki assets/backgrounds/ klasörüne .wav dosyaları koyun.",
       "useLstm": "Eğitilmiş LSTM'yi AI melodisine karıştır",
       "useLstmDisabled": "sunucuda checkpoint yok",
@@ -188,7 +188,7 @@
     },
     "live": {
       "title": "Canlı akış",
-      "subtitle": "WebSocket nota olayları ve Web Audio — Stüdyo Demo turunu çalıştıran motorla aynı.",
+      "subtitle": "WebSocket nota olayları ve Web Audio - Stüdyo Demo turunu çalıştıran motorla aynı.",
       "controls": "Akış ayarları",
       "interval": "Notalar arası süre (ms)",
       "volume": "Önizleme sesi",
@@ -211,9 +211,9 @@
       "logTitle": "Oturum günlüğü",
       "logEmpty": "Henüz kayıt yok.",
       "events": "olay",
-      "audioHint": "İpucu: ses yoksa Başlat’a tekrar tıklayın — tarayıcılar AudioContext için kullanıcı etkileşimi ister.",
+      "audioHint": "İpucu: ses yoksa Başlat’a tekrar tıklayın - tarayıcılar AudioContext için kullanıcı etkileşimi ister.",
       "audioBlocked": "Ses başlatılamadı (tarayıcı engeli veya kullanılamıyor).",
-      "socketError": "WebSocket hatası — uvicorn 8000 portunda çalışıyor mu?",
+      "socketError": "WebSocket hatası - uvicorn 8000 portunda çalışıyor mu?",
       "stoppedByUser": "Kullanıcı durdurdu.",
       "donePlanet": "{{planet}} için akış bitti.",
       "logBadJson": "JSON olmayan mesaj alındı.",
@@ -243,11 +243,11 @@
     "loading": "En son rapor yükleniyor…",
     "noReport": "Henüz kayıtlı rapor yok. Yukarıdan küçük bir ızgara seçip çalıştırın ya da scripts/evaluate_baseline_vs_ai.py betiğini çevrimdışı koşun.",
     "reportConfig": "Izgara: {{planets}} × {{styles}} × seed’ler {{seeds}} · gün={{days}} · α={{alpha}}",
-    "reportPersisted": "Kayıtlı rapor (çevrimdışı oluşturuldu) — {{when}}",
+    "reportPersisted": "Kayıtlı rapor (çevrimdışı oluşturuldu) - {{when}}",
     "legend": "Açıklama",
     "legend.n": "testte eşleştirilen çift sayısı",
     "legend.p": "Wilcoxon eşli sıralama p-değeri (iki yönlü)",
-    "legend.dz": "Cohen’s d_z — eşli örnekler için standartlaştırılmış etki büyüklüğü",
+    "legend.dz": "Cohen’s d_z - eşli örnekler için standartlaştırılmış etki büyüklüğü",
     "legend.delta": "ölçütteki ortalama (YZ) − ortalama (temel)",
     "legend.direction": "yalnızca p < α olduğunda gösterilir (anlamlı fark)",
     "chip.pairs": "Çift",
@@ -258,7 +258,7 @@
     "col.baseline": "Temel (μ ± σ)",
     "col.ai": "YZ (μ ± σ)",
     "col.direction": "Yön",
-    "toastDone": "Değerlendirme tamamlandı — {{n}} çift.",
+    "toastDone": "Değerlendirme tamamlandı - {{n}} çift.",
     "toastFail": "Değerlendirme başarısız: {{message}}",
     "toastTooLarge": "Izgara çok büyük ({{n}} çift). En fazla 12 olmalı.",
     "toastEmpty": "En az bir gezegen, bir stil ve bir seed seçin."
@@ -328,14 +328,14 @@
     "tabsAria": "Kepler yasası seçici",
     "law1.tab": "1. Elipsler",
     "law1.title": "Birinci yasa: yörüngeler elipstir",
-    "law1.lead": "Her gezegenin yörüngesi, odaklarından birinde Güneş bulunan bir elipstir — mükemmel bir çember değil.",
+    "law1.lead": "Her gezegenin yörüngesi, odaklarından birinde Güneş bulunan bir elipstir - mükemmel bir çember değil.",
     "law1.body1": "Şekil ",
     "law1.term.e": "eksantriklik",
     "law1.body2": " e ile tanımlanır: 0 çember, 1 kaçış yörüngesi. Yarı büyük ekseni 1 AB sabit tutarak kaydırıcıyla yörüngeyi deforme et.",
     "law1.eLabel": "Eksantriklik (e)",
     "law1.bullet1": "Günberi = a × (1 − e) = {{v}} AB",
     "law1.bullet2": "Günöte = a × (1 + e) = {{v}} AB",
-    "law1.bullet3": "Güneş her zaman odaklardan birindedir — geometrik merkez asla değil (e = 0 hariç).",
+    "law1.bullet3": "Güneş her zaman odaklardan birindedir - geometrik merkez asla değil (e = 0 hariç).",
     "law1.caption": "Sarı nokta = odaklardan birinde Güneş. Kesik çember, aynı a ile e = 0 olsaydı sahip olacağın yörünge.",
     "law2.tab": "2. Eşit alanlar",
     "law2.title": "İkinci yasa: eşit zamanda eşit alan",
@@ -344,7 +344,7 @@
     "law2.term.peri": "günberi",
     "law2.body2": " yakınında daha hızlı, ",
     "law2.term.ap": "günöte",
-    "law2.body3": " yakınında ise daha yavaş hareket etmesi demektir — yörünge laboratuvarındaki kuyrukluyıldız hazır ayarlarında tam olarak bu asimetriyi duyarsın.",
+    "law2.body3": " yakınında ise daha yavaş hareket etmesi demektir - yörünge laboratuvarındaki kuyrukluyıldız hazır ayarlarında tam olarak bu asimetriyi duyarsın.",
     "law2.eLabel": "Eksantriklik (e)",
     "law2.wedgesLabel": "Eşit zaman dilimleri",
     "law2.ratio": "Bu yörünge için maks hız, min hızın {{ratio}} katıdır.",
@@ -352,12 +352,12 @@
     "law3.tab": "3. T² ∝ a³",
     "law3.title": "Üçüncü yasa: periyod vs uzaklık",
     "law3.lead": "T² (yıl cinsinden periyod), a³ (AB cinsinden yarı büyük eksen) ile bölünür ve Güneş etrafındaki her cisim için aynı sabittir.",
-    "law3.body": "Aşağıdaki iki yarı büyük ekseni kaydır. En sağdaki sütundaki oran neredeyse sabit kalır — bu ",
+    "law3.body": "Aşağıdaki iki yarı büyük ekseni kaydır. En sağdaki sütundaki oran neredeyse sabit kalır - bu ",
     "law3.term": "üçüncü yasadır",
-    "law3.a1Label": "Nesne A — yarı büyük eksen",
-    "law3.a2Label": "Nesne B — yarı büyük eksen",
+    "law3.a1Label": "Nesne A - yarı büyük eksen",
+    "law3.a2Label": "Nesne B - yarı büyük eksen",
     "law3.colObj": "Cisim",
-    "law3.takeaway": "a iki katına çıkarsa T, 2^1.5 ≈ 2.83 oranında büyür — yani Mars yılı (a ≈ 1.5), neredeyse 1.9 Dünya yılıdır.",
+    "law3.takeaway": "a iki katına çıkarsa T, 2^1.5 ≈ 2.83 oranında büyür - yani Mars yılı (a ≈ 1.5), neredeyse 1.9 Dünya yılıdır.",
     "law3.caption": "Cyan = Nesne A. Pembe = Nesne B. Her iki yörünge de netlik için neredeyse dairesel."
   },
   "missions": {
@@ -386,8 +386,8 @@
     "running": "Karşılaştırılıyor…",
     "playBoth": "▶ İkisini birden çal",
     "physicsTitle": "NASA'dan fiziksel özellikler",
-    "physicsHint": "Bunlar, sonifikasyon motorunun her gezegen için okuduğu sabitlerdir — yörünge periyodu, eksantriklik, çekim.",
-    "metricsTitle": "Sonifikasyon metrikleri — ne değişti?",
+    "physicsHint": "Bunlar, sonifikasyon motorunun her gezegen için okuduğu sabitlerdir - yörünge periyodu, eksantriklik, çekim.",
+    "metricsTitle": "Sonifikasyon metrikleri - ne değişti?",
     "metricsHint": "Üretilen MIDI olayları üzerinde hesaplanır. Daha büyük mutlak Δ%, iki gezegen arasındaki müziğin daha farklı olduğunu gösterir.",
     "toastDone": "Üretildi: A = {{a}} vs B = {{b}}",
     "toastFail": "Karşılaştırma başarısız: {{message}}",
@@ -406,7 +406,7 @@
     "openStudio": "Stüdyoyu aç",
     "heroKicker": "Güneş Sistemi referansı",
     "heroTitle": "Sekiz dünya, tek senfoni",
-    "heroSubtitle": "NASA kaynaklı veriler, görev tarihi ve her gezegenin müzikal imzası — sınıflar, müzeler ve meraklılar için derlenmiştir.",
+    "heroSubtitle": "NASA kaynaklı veriler, görev tarihi ve her gezegenin müzikal imzası - sınıflar, müzeler ve meraklılar için derlenmiştir.",
     "search": "Ansiklopediyi ara",
     "searchPlaceholder": "Gezegenler, görevler, gerçekler ara…",
     "noMatch": "Bu aramayla eşleşen gezegen yok.",
@@ -428,7 +428,7 @@
     "section.atmosphere": "Atmosfer",
     "section.physics": "Fiziksel özellikler",
     "section.missions": "Uzay araçları görevleri",
-    "section.sound": "Nasıl ses çıkarır — ve neden",
+    "section.sound": "Nasıl ses çıkarır - ve neden",
     "section.facts": "Biliyor musunuz?",
     "section.citations": "Kaynaklar",
     "noMissions": "Bu dünyayı henüz bir bayrak görev ziyaret etmedi.",
@@ -465,7 +465,7 @@
     "title": "Demo modu",
     "subtitle": "Jüri için rehberli 3-gezegen turu. Başlat'a basın, dinleyin.",
     "controlsTitle": "Hazırlanmış sunum",
-    "controlsHint": "Dünya · Mars · Jüpiter — yeniden üretilebilirlik için seed=42, her biri 30 günlük Horizons penceresi.",
+    "controlsHint": "Dünya · Mars · Jüpiter - yeniden üretilebilirlik için seed=42, her biri 30 günlük Horizons penceresi.",
     "autoPlay": "Otomatik oynat",
     "start": "Demo'yu başlat",
     "running": "Çalışıyor…",
@@ -502,7 +502,7 @@
   "birthday": {
     "badge": "Kozmik Doğum Günü Hediyesi",
     "title": "Gezegeninin sen doğduğundan beri söylediği şarkıyı hediye et",
-    "subtitle": "Bir gezegen ve doğum tarihi seç — NASA Horizons'tan o günden bugüne gerçek efemeris verisini çekip kişisel bir senfoniye dönüştürüyoruz.",
+    "subtitle": "Bir gezegen ve doğum tarihi seç - NASA Horizons'tan o günden bugüne gerçek efemeris verisini çekip kişisel bir senfoniye dönüştürüyoruz.",
     "pageBreadcrumb": "Doğum günü hediyesi",
     "form": {
       "recipient": "Bu hediye kime?",
@@ -515,27 +515,27 @@
       "sender": "Senin adın (opsiyonel)",
       "senderPlaceholder": "Örn. Sam'den",
       "message": "Kısa bir mesaj (opsiyonel)",
-      "messagePlaceholder": "Doğum günün kutlu olsun — geldiğin günden beri gezegenin nasıl söylediğini dinle.",
+      "messagePlaceholder": "Doğum günün kutlu olsun - geldiğin günden beri gezegenin nasıl söylediğini dinle.",
       "generate": "Hediyeyi besteleyin",
       "generating": "NASA'ya soruluyor…",
-      "privacyNote": "Hediyeler bu sunucuda saklanır ve 24 karakterli bir token ile erişilir. Hesap yok, e-posta yok — bağlantıyı yalnızca alıcıyla paylaş."
+      "privacyNote": "Hediyeler bu sunucuda saklanır ve 24 karakterli bir token ile erişilir. Hesap yok, e-posta yok - bağlantıyı yalnızca alıcıyla paylaş."
     },
     "styleCards": {
       "celebration": {
         "label": "Kutlama",
-        "description": "Parlak, neşeli, hareketli. Sabit bir backbeat üzerinde majör hekzatonik — varsayılan parti hissi."
+        "description": "Parlak, neşeli, hareketli. Sabit bir backbeat üzerinde majör hekzatonik - varsayılan parti hissi."
       },
       "tender": {
         "label": "İçten ithaf",
-        "description": "Yavaş, samimi, sıcak. Sıcak bir pad üzerinde majör-7 piyano — yakın aile, sevgili veya sesli bir sarılmayı hak eden herkes için."
+        "description": "Yavaş, samimi, sıcak. Sıcak bir pad üzerinde majör-7 piyano - yakın aile, sevgili veya sesli bir sarılmayı hak eden herkes için."
       },
       "anthem": {
         "label": "Kozmik marş",
-        "description": "Kahramanca, yükselen, hayat montajı. Korno, çello ve yaylılar üzerinde lidya #4 — kilometre taşı doğum günleri için."
+        "description": "Kahramanca, yükselen, hayat montajı. Korno, çello ve yaylılar üzerinde lidya #4 - kilometre taşı doğum günleri için."
       },
       "waltz": {
         "label": "Yıldızlı vals",
-        "description": "Zarif, balo salonu aromalı. G majör üzerinde klavsen ve pizzicato — klasik bir ithaf gibi hissettirir."
+        "description": "Zarif, balo salonu aromalı. G majör üzerinde klavsen ve pizzicato - klasik bir ithaf gibi hissettirir."
       },
       "nebula": {
         "label": "Bulutsu sürüklenmesi",
@@ -562,10 +562,10 @@
     },
     "card": {
       "kicker": "Kozmik Doğum Günü Hediyesi",
-      "title": "İyi ki doğdun {{name}} — senin {{planet}} şarkın",
+      "title": "İyi ki doğdun {{name}} - senin {{planet}} şarkın",
       "subtitle": "Gerçek NASA Horizons verisinden inşa edildi: {{date}} tarihinden bugüne kadar, {{planet}} için.",
       "audioHint": "Stil: {{style}} · {{bpm}} BPM",
-      "audioUnavailable": "Ses henüz hazır değil — bir an sonra tekrar dene.",
+      "audioUnavailable": "Ses henüz hazır değil - bir an sonra tekrar dene.",
       "shareCopy": "Paylaşım linkini kopyala",
       "downloadWav": "WAV indir",
       "downloadMidi": "MIDI indir",
@@ -574,7 +574,7 @@
       "srPaused": "Kozmik şarkı duraklatıldı.",
       "badgeHq": "Stüdyo kalitesi · FluidSynth",
       "badgeLstm": "AI ile harmanlanmış melodi (LSTM)",
-      "fluidFallback": "Yedek synth çalıyor — stüdyo kalitesi ses için bir SoundFont yükleyin (assets/soundfonts/)."
+      "fluidFallback": "Yedek synth çalıyor - stüdyo kalitesi ses için bir SoundFont yükleyin (assets/soundfonts/)."
     },
     "facts": {
       "ageInPlanetYears": "{{planet}} yılı olarak yaş",
@@ -590,7 +590,7 @@
       "created": "{{name}} için kozmik hediye hazır.",
       "failed": "Hediye oluşturulamadı: {{message}}",
       "shareCopied": "Paylaşım linki panoya kopyalandı.",
-      "shareFailed": "Pano engelli — URL'yi adres çubuğundan kopyala."
+      "shareFailed": "Pano engelli - URL'yi adres çubuğundan kopyala."
     },
     "gift": {
       "breadcrumb": "Biri sana bir şarkı yaptı",

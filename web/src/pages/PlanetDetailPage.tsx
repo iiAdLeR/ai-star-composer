@@ -26,7 +26,7 @@ type Tab = "overview" | "physics" | "missions" | "sound" | "facts" | "gallery";
 const TABS: Tab[] = ["overview", "physics", "missions", "sound", "facts", "gallery"];
 
 function fmtNum(n: number, digits = 2): string {
-  if (!Number.isFinite(n)) return "—";
+  if (!Number.isFinite(n)) return " - ";
   if (Math.abs(n) >= 1e9) return `${(n / 1e9).toFixed(digits)}×10⁹`;
   if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(digits)}×10⁶`;
   return n.toLocaleString(undefined, { maximumFractionDigits: digits });
@@ -193,7 +193,7 @@ export function PlanetDetailPage() {
         </dl>
       </section>
 
-      {/* Tabs — sticky on tablet+ so the user can switch sections while
+      {/* Tabs - sticky on tablet+ so the user can switch sections while
           deep-scrolled. On mobile we leave them inline (the page is shorter
           and the EncyclopediaLayout already shows two stacked nav rows). */}
       <nav

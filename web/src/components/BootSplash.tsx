@@ -9,11 +9,11 @@ import { isSoundEnabled, playCue } from "@/audio/uiCues";
  * Returning visitors skip the splash entirely (localStorage flag). Any keypress
  * or pointer-down short-circuits the animation to a 200ms fade-out.
  *
- * `prefers-reduced-motion` users get a 250ms opacity fade only — no scaling,
+ * `prefers-reduced-motion` users get a 250ms opacity fade only - no scaling,
  * no blur, no movement. The accompanying audio cue (if any) is suppressed too
  * because motion sensitivity often correlates with sound sensitivity.
  *
- * A 3s hard-timeout guarantees the splash never blocks render — if asset
+ * A 3s hard-timeout guarantees the splash never blocks render - if asset
  * loading hangs, we drop straight to the app and silently set the seen flag
  * so the next visit is clean.
  */
@@ -36,7 +36,7 @@ function readAlreadyBooted(): boolean {
   try {
     return window.localStorage.getItem(STORAGE_KEY) === "1";
   } catch {
-    // Private mode / disabled storage — show the splash, it can't be persisted
+    // Private mode / disabled storage - show the splash, it can't be persisted
     // but that's preferable to crashing.
     return false;
   }
@@ -60,7 +60,7 @@ export function BootSplash({ children }: { children: ReactNode }) {
     // Reduced-motion users get no audio either (sensitivity often pairs up).
     // Other users hear the single A4 cue only if they haven't muted UI sound.
     // Note: most browsers gate AudioContext until first user gesture, so this
-    // cue may be silent on the very first visit — that's fine, it's intended
+    // cue may be silent on the very first visit - that's fine, it's intended
     // as a *bonus*, not a guaranteed beat.
     if (!reduced && isSoundEnabled()) {
       playCue("boot");

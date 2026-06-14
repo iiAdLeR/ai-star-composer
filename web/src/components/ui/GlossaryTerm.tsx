@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { getGlossaryEntry } from "@/data/glossary";
 
 /**
- * Inline glossary term — renders the children with a subtle dotted underline.
+ * Inline glossary term - renders the children with a subtle dotted underline.
  * Click or focus shows a popover with the definition + link to the full
  * glossary entry. Works with keyboard (Enter / Space) for accessibility.
  *

@@ -1,5 +1,5 @@
 /**
- * Achievement system — purely localStorage, no backend, no accounts.
+ * Achievement system - purely localStorage, no backend, no accounts.
  *
  * Each achievement is unlocked by an `event` (a string the rest of the
  * app emits via `trackEvent(...)`). Some achievements need accumulated
@@ -7,7 +7,7 @@
  * counter map next to the unlocked set.
  *
  * Designed to feel like a Discovery layer for a museum exhibit, not a
- * leaderboard — so we never display "0/8" prominently. The only UI is
+ * leaderboard - so we never display "0/8" prominently. The only UI is
  * a Trophies panel + a passing toast when a new badge unlocks.
  */
 
@@ -76,7 +76,7 @@ function saveState(state: PersistedState): void {
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
-    /* localStorage may be disabled — ignore. */
+    /* localStorage may be disabled - ignore. */
   }
 }
 

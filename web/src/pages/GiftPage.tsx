@@ -9,7 +9,7 @@ import { SoundToggle } from "@/components/ui/SoundToggle";
 import { type BirthdayGiftResponse, fetchGift } from "@/lib/api";
 
 /**
- * /gift/<token> — shareable birthday card. The route is the recipient's
+ * /gift/<token> - shareable birthday card. The route is the recipient's
  * entry point: they open the link, see their personalized card, and the
  * song attempts to autoplay (subject to browser policy).
  */

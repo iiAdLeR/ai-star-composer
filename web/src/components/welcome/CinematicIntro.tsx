@@ -46,7 +46,7 @@ function markSeen(): void {
   try {
     window.sessionStorage.setItem(STORAGE_KEY, "1");
   } catch {
-    /* private mode etc. — playing again next visit is fine */
+    /* private mode etc. - playing again next visit is fine */
   }
 }
 
@@ -123,9 +123,9 @@ export function CinematicIntro({ force = false, onDone }: CinematicIntroProps) {
       const t01 = Math.max(0, Math.min(1, elapsed / TOTAL_MS));
 
       // Three-phase warp:
-      //  0.00 – 0.20  drift in   — slow, calm, hint of motion
-      //  0.20 – 0.70  warp peak  — accelerate hard
-      //  0.70 – 1.00  decel      — settle the camera, prep for handoff
+      //  0.00 – 0.20  drift in   - slow, calm, hint of motion
+      //  0.20 – 0.70  warp peak  - accelerate hard
+      //  0.70 – 1.00  decel      - settle the camera, prep for handoff
       const speedCurve =
         t01 < 0.2
           ? 0.4 + (t01 / 0.2) * 0.8                       // 0.4 -> 1.2
@@ -173,7 +173,7 @@ export function CinematicIntro({ force = false, onDone }: CinematicIntroProps) {
         const ppx = cx + (s.x - cx) * pk;
         const ppy = cy + (s.y - cy) * pk;
 
-        // Off-screen culling — keeps the canvas thin even at 5k+ stars.
+        // Off-screen culling - keeps the canvas thin even at 5k+ stars.
         if (px < -40 || px > width + 40 || py < -40 || py > height + 40) continue;
 
         const brightness = Math.min(1, 1.1 - s.z / 320);
@@ -245,7 +245,7 @@ export function CinematicIntro({ force = false, onDone }: CinematicIntroProps) {
         className="absolute inset-0 h-full w-full"
         aria-hidden
       />
-      {/* Title reveal — uses pure CSS so the canvas can stay GPU-friendly. */}
+      {/* Title reveal - uses pure CSS so the canvas can stay GPU-friendly. */}
       <div className="cinematic-intro-stage pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center">
         <div className="cinematic-intro-ring" />
         <div className="cinematic-intro-mark relative mb-5 flex h-16 w-16 items-center justify-center md:h-20 md:w-20">
